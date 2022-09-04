@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        <title>MAT装置 回転</title>
+        <script src="../static/jquery.min2.js"></script>
+        <script src="static/jquery.min.js"></script>
+        <link rel="stylesheet" href="static/bokeh-0.13.0.min.css" type="text/css" />
+        
+        <script type="text/javascript" src="static/bokeh-0.13.0.min.js"></script>
+        <style type="text/css">
+.div1 {
+    float:left;
+}
+</style>  
+	</head>
+	<body> 
+        <p id="eid_date">MAT装置 回転</p> 
+        <p>確認したい日付を選択してください<br> 
+        先に１つ目の日時を選択してください。<br>
+        8時～19時までのデータが閲覧可能、日はデータなし<br>
+        y軸の表示範囲（min、max）を記載してください。<br>
+        ボタン1でグラフ表示</p><br>
+
+        min<input type="text" id="input0" value=0 size="10">
+         max<input type="text" id="input0_1" value=270 size="10"><br>
+        
+             <input type="text" id="input1" name="birth01" size="10">
+            </select> 年
+            <select id="input2" name="birth02" class="js-changeMonth" >      
+            </select> 月
+            <select id="input3" name="birth03" class="js-changeDay">            
+            </select> 日
+            <select id="input4" name="birth04" class="js-changeDay">            
+            </select> 時
+<br>
+            <input type="radio" name="trigger" value="0" checked>回転すべて
+            <input type="radio" name="trigger" value="1">コンパクションローラー1
+            <input type="radio" name="trigger" value="2">コンパクションローラー2
+            <input type="radio" name="trigger" value="3">サーフェースローラー1<br>
+
+            <input type="text" id="input1_2" name="birth01" size="10">
+            </select> 年
+            <select id="input2_2" name="birth02" class="js-changeMonth" >      
+            </select> 月
+            <select id="input3_2" name="birth03" class="js-changeDay">            
+            </select> 日
+            <select id="input4_2" name="birth04" class="js-changeDay">            
+            </select> 時
+<br>
+            <input type="radio" name="trigger_2" value="0" checked>回転すべて
+            <input type="radio" name="trigger_2" value="1">コンパクションローラー1
+            <input type="radio" name="trigger_2" value="2">コンパクションローラー2
+            <input type="radio" name="trigger_2" value="3">サーフェースローラー1<br>
+
+            <input type="button" id="button" value="ボタン1" /><br>
+
+            <a href="/past_index">過去データ</a><br>
+         
+        <div id="data1" class=div1></div>
+        <div id="data2" class=div1></div>
+        <div id="data3" class=div1></div>
+        <div id="error" class=div1></div>
+        <div id="data4" class=div1></div>
+        <div id="data5" class=div1></div>
+        <div id="data6" class=div1></div>
+        <div id="error2" class=div1></div>
+<script>
+var Element = document.getElementById("input2");
+for (var i = 1; i<= 12; i++) {
+  var option = document.createElement("option");
+  option.value = i;
+  option.innerText = i;
+  Element.appendChild(option);
+}
+var Element = document.getElementById("input3");
+for (var i = 1; i<= 31; i++) {
+  var option = document.createElement("option");
+  option.value = i;
+  option.innerText = i;
+  Element.appendChild(option);
+}
+
+var Element = document.getElementById("input4");
+for (var i = 1; i<= 23; i++) {
+  var option = document.createElement("option");
+  option.value = i;
+  option.innerText = i;
+  Element.appendChild(option);
+}
+
+var Element = document.getElementById("input2_2");
+for (var i = 1; i<= 12; i++) {
+  var option = document.createElement("option");
+  option.value = i;
+  option.innerText = i;
+  Element.appendChild(option);
+}
+var Element = document.getElementById("input3_2");
+for (var i = 1; i<= 31; i++) {
+  var option = document.createElement("option");
+  option.value = i;
+  option.innerText = i;
+  Element.appendChild(option);
+}
+
+var Element = document.getElementById("input4_2");
+for (var i = 1; i<= 23; i++) {
+  var option = document.createElement("option");
+  option.value = i;
+  option.innerText = i;
+  Element.appendChild(option);
+}
+        </script>
+        <script>
+            
+                $(window).load(init());
+                function init(){
+                  $("#button").click(function() {
+                    var textData = JSON.stringify({"t":$("#input1").val(),"t_2":$("#input2").val(),
+                    "t_3":$("#input3").val(),"t_4":$("#input4").val(),
+                    "t2":$('input:radio[name="trigger"]:checked').val(),
+
+                     "u":$("#input1_2").val(),"u_2":$("#input2_2").val(),
+            "u_3":$("#input3_2").val(),"u_4":$("#input4_2").val(),
+            "u2":$('input:radio[name="trigger_2"]:checked').val(), 
+
+            "v1":$("#input0").val(),"v2":$("#input0_1").val()      
+            });
+            console.log(textData)
+                    $.ajax({
+                      type:'POST',
+                      url:'/past_postpage2',
+                      data:textData,
+                      contentType:'application/json',
+                      success:function(data) {
+                        var result = JSON.parse(data.ResultSet).result;
+                var result2 = JSON.parse(data.ResultSet).result2;
+                var result3 = JSON.parse(data.ResultSet).result3;
+                var error = JSON.parse(data.ResultSet).error;
+
+                var result_2 = JSON.parse(data.ResultSet).result4;
+                var result2_2 = JSON.parse(data.ResultSet).result5;
+                var result3_2 = JSON.parse(data.ResultSet).result6;
+                var error2 = JSON.parse(data.ResultSet).error2;
+                
+                $("#data1").html(result);
+                $("#data2").html(result2);
+                $("#data3").html(result3);
+                $("#error").html(error);
+
+                $("#data4").html(result_2);
+                $("#data5").html(result2_2);
+                $("#data6").html(result3_2);
+                $("#error2").html(error2);
+                      }
+                    });
+                    return false;
+                  });
+                }          
+                   </script>
+
+	</body>
+</html>

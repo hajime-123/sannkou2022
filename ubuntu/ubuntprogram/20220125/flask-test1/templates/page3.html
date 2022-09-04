@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        <title>MAT装置 流量</title>
+        <script src="static/jquery.min.js"></script>
+        <link rel="stylesheet" href="static/bokeh-0.13.0.min.css" type="text/css" />
+
+        <script type="text/javascript" src="static/bokeh-0.13.0.min.js"></script>
+	</head>
+	<body> 
+        <p id="eid_date">MAT装置 流量</p> 
+        <p>DBからの取得数を決めてください</p>
+        <p>ボタン1でグラフ表示</p> 
+        
+            <p>number <input type = "number" id="input-text" name = "number" /></p>
+            <input type="radio" name="trigger2" value="4" checked>閾値表示なし
+            <input type="radio" name="trigger2" value="5">閾値表示<br>
+            <input type="button" id="button" value="ボタン1" /><br>
+            <a href="/">index</a>
+
+            <div id="error"></div>
+            <div id="data1"></div>
+        <div id="data2"></div>
+        
+
+        <script>
+            
+                $(window).load(init());
+                function init(){
+                  $("#button").click(function() {
+                    var textData = JSON.stringify({"t":$("#input-text").val(),"t2":$('input:radio[name="trigger2"]:checked').val()});
+                    $.ajax({
+                      type:'POST',
+                      url:'/postpage3',
+                      data:textData,
+                      contentType:'application/json',
+                      success:function(data) {
+                        var result = JSON.parse(data.ResultSet).result;
+                        var result2 = JSON.parse(data.ResultSet).result2;
+                        var error = JSON.parse(data.ResultSet).error;
+                        // console.log(data);
+                        $("#data1").html(result);
+                        $("#data2").html(result2);
+                        $("#error").html(error);
+                      }
+                    });
+                    return false;
+                  });
+                }          
+                   </script>
+         
+	</body>
+</html>

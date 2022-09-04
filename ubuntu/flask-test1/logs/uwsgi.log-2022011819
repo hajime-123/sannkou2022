@@ -1,0 +1,196 @@
+*** Starting uWSGI 2.0.20 (64bit) on [Tue Jan 18 18:32:18 2022] ***
+compiled with version: 9.3.0 on 20 December 2021 07:54:39
+os: Linux-5.11.0-43-generic #47~20.04.2-Ubuntu SMP Mon Dec 13 11:06:56 UTC 2021
+nodename: haji
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/haji/flask-test1
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/haji/flask-test1
+your processes number limit is 31184
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uwsgi socket 0 bound to UNIX address /tmp/uwsgi.sock fd 6
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.10 (default, Nov 26 2021, 20:14:08)  [GCC 9.3.0]
+Python main interpreter initialized at 0x55f3dd992620
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 166688 bytes (162 KB) for 2 cores
+*** Operational MODE: threaded ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 6612)
+spawned uWSGI worker 1 (pid: 6613, cores: 2)
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55f3dd992620 pid: 6613 (default app)
+[pid: 6613|app: 0|req: 1/1] 172.21.52.27 () {40 vars in 768 bytes} [Tue Jan 18 18:32:36 2022] GET /past_index => generated 1276 bytes in 6 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 6613|app: 0|req: 2/2] 172.21.52.27 () {40 vars in 690 bytes} [Tue Jan 18 18:32:36 2022] GET /static/style.css => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 1)
+[pid: 6613|app: 0|req: 3/3] 172.21.52.27 () {42 vars in 819 bytes} [Tue Jan 18 18:32:39 2022] GET /past_page2 => generated 6362 bytes in 7 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 6613|app: 0|req: 4/4] 172.21.52.27 () {40 vars in 685 bytes} [Tue Jan 18 18:32:39 2022] GET /static/jquery.min2.js => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 1)
+/usr/local/lib/python3.8/dist-packages/bokeh/plotting/helpers.py:539: UserWarning: WheelZoomTool are being repeated
+  warnings.warn("%s are being repeated" % ",".join(repeated_tools))
+/usr/local/lib/python3.8/dist-packages/bokeh/plotting/helpers.py:539: UserWarning: WheelZoomTool are being repeated
+  warnings.warn("%s are being repeated" % ",".join(repeated_tools))
+[pid: 6613|app: 0|req: 5/5] 172.21.52.27 () {48 vars in 832 bytes} [Tue Jan 18 18:32:56 2022] POST /past_postpage2 => generated 787013 bytes in 285 msecs (HTTP/1.1 200) 2 headers in 75 bytes (4 switches on core 0)
+[pid: 6613|app: 0|req: 6/6] 172.21.52.27 () {42 vars in 799 bytes} [Tue Jan 18 18:42:12 2022] GET / => generated 1415 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 1)
+[pid: 6613|app: 0|req: 7/7] 172.21.52.27 () {40 vars in 680 bytes} [Tue Jan 18 18:42:12 2022] GET /static/style.css => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 0)
+[pid: 6613|app: 0|req: 8/8] 172.21.52.27 () {42 vars in 799 bytes} [Tue Jan 18 18:42:13 2022] GET /page1 => generated 2319 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 1)
+/usr/local/lib/python3.8/dist-packages/bokeh/plotting/helpers.py:539: UserWarning: WheelZoomTool are being repeated
+  warnings.warn("%s are being repeated" % ",".join(repeated_tools))
+[pid: 6613|app: 0|req: 9/9] 172.21.52.27 () {48 vars in 815 bytes} [Tue Jan 18 18:42:17 2022] POST /postpage1 => generated 25482 bytes in 66 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 0)
+/usr/local/lib/python3.8/dist-packages/bokeh/plotting/helpers.py:539: UserWarning: WheelZoomTool are being repeated
+  warnings.warn("%s are being repeated" % ",".join(repeated_tools))
+[pid: 6613|app: 0|req: 10/10] 172.21.52.27 () {48 vars in 815 bytes} [Tue Jan 18 18:42:18 2022] POST /postpage1 => generated 25482 bytes in 62 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 1)
+/usr/local/lib/python3.8/dist-packages/bokeh/plotting/helpers.py:539: UserWarning: WheelZoomTool are being repeated
+  warnings.warn("%s are being repeated" % ",".join(repeated_tools))
+[pid: 6613|app: 0|req: 11/11] 172.21.52.27 () {48 vars in 815 bytes} [Tue Jan 18 18:42:19 2022] POST /postpage1 => generated 25482 bytes in 61 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 0)
+[pid: 6613|app: 0|req: 12/12] 172.21.52.27 () {42 vars in 794 bytes} [Tue Jan 18 18:42:21 2022] GET / => generated 1415 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 1)
+[pid: 6613|app: 0|req: 13/13] 172.21.52.27 () {40 vars in 680 bytes} [Tue Jan 18 18:42:21 2022] GET /static/style.css => generated 232 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 0)
+[pid: 6613|app: 0|req: 14/14] 172.21.52.27 () {42 vars in 799 bytes} [Tue Jan 18 18:42:22 2022] GET /page2 => generated 3103 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 1)
+/usr/local/lib/python3.8/dist-packages/bokeh/plotting/helpers.py:539: UserWarning: WheelZoomTool are being repeated
+  warnings.warn("%s are being repeated" % ",".join(repeated_tools))
+[pid: 6613|app: 0|req: 15/15] 172.21.52.27 () {48 vars in 815 bytes} [Tue Jan 18 18:42:26 2022] POST /postpage2 => generated 25654 bytes in 61 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 0)
+/usr/local/lib/python3.8/dist-packages/bokeh/plotting/helpers.py:539: UserWarning: WheelZoomTool are being repeated
+  warnings.warn("%s are being repeated" % ",".join(repeated_tools))
+[pid: 6613|app: 0|req: 16/16] 172.21.52.27 () {48 vars in 815 bytes} [Tue Jan 18 18:42:27 2022] POST /postpage2 => generated 25654 bytes in 62 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 1)
+/usr/local/lib/python3.8/dist-packages/bokeh/plotting/helpers.py:539: UserWarning: WheelZoomTool are being repeated
+  warnings.warn("%s are being repeated" % ",".join(repeated_tools))
+[pid: 6613|app: 0|req: 17/17] 172.21.52.27 () {48 vars in 815 bytes} [Tue Jan 18 18:42:28 2022] POST /postpage2 => generated 25654 bytes in 66 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 0)
+[pid: 6613|app: 0|req: 18/18] 172.21.52.27 () {42 vars in 794 bytes} [Tue Jan 18 18:42:29 2022] GET / => generated 1415 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 1)
+[pid: 6613|app: 0|req: 19/19] 172.21.52.27 () {40 vars in 680 bytes} [Tue Jan 18 18:42:29 2022] GET /static/style.css => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 0)
+[pid: 6613|app: 0|req: 20/20] 172.21.52.27 () {42 vars in 799 bytes} [Tue Jan 18 18:42:31 2022] GET /page2 => generated 3103 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 1)
+[pid: 6613|app: 0|req: 21/21] 172.21.52.27 () {42 vars in 772 bytes} [Wed Jan 19 08:56:38 2022] GET / => generated 1415 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 6613|app: 0|req: 22/22] 172.21.52.27 () {42 vars in 734 bytes} [Wed Jan 19 08:56:38 2022] GET /static/style.css => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 1)
+[pid: 6613|app: 0|req: 23/23] 172.21.52.27 () {40 vars in 705 bytes} [Wed Jan 19 08:56:39 2022] GET /favicon.ico => generated 232 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 0)
+[pid: 6613|app: 0|req: 24/24] 172.21.52.27 () {42 vars in 799 bytes} [Wed Jan 19 08:56:41 2022] GET /page1 => generated 2319 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 1)
+[pid: 6613|app: 0|req: 26/25] 172.21.52.27 () {44 vars in 821 bytes} [Wed Jan 19 08:56:41 2022] GET /static/bokeh-0.13.0.min.css => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 189 bytes (0 switches on core 0)
+[pid: 6613|app: 0|req: 27/26] 172.21.52.27 () {44 vars in 792 bytes} [Wed Jan 19 08:56:41 2022] GET /static/jquery.min.js => generated 0 bytes in 5 msecs (HTTP/1.1 304) 4 headers in 189 bytes (0 switches on core 1)
+[pid: 6613|app: 0|req: 27/27] 172.21.52.27 () {44 vars in 805 bytes} [Wed Jan 19 08:56:41 2022] GET /static/bokeh-0.13.0.min.js => generated 0 bytes in 3 msecs (HTTP/1.1 304) 4 headers in 190 bytes (0 switches on core 0)
+/usr/local/lib/python3.8/dist-packages/bokeh/plotting/helpers.py:539: UserWarning: WheelZoomTool are being repeated
+  warnings.warn("%s are being repeated" % ",".join(repeated_tools))
+[pid: 6613|app: 0|req: 28/28] 172.21.52.27 () {48 vars in 815 bytes} [Wed Jan 19 08:56:46 2022] POST /postpage1 => generated 25482 bytes in 62 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 1)
+/usr/local/lib/python3.8/dist-packages/bokeh/plotting/helpers.py:539: UserWarning: WheelZoomTool are being repeated
+  warnings.warn("%s are being repeated" % ",".join(repeated_tools))
+[pid: 6613|app: 0|req: 29/29] 172.21.52.27 () {48 vars in 815 bytes} [Wed Jan 19 08:56:47 2022] POST /postpage1 => generated 25482 bytes in 61 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 0)
+/usr/local/lib/python3.8/dist-packages/bokeh/plotting/helpers.py:539: UserWarning: WheelZoomTool are being repeated
+  warnings.warn("%s are being repeated" % ",".join(repeated_tools))
+[pid: 6613|app: 0|req: 30/30] 172.21.52.27 () {48 vars in 815 bytes} [Wed Jan 19 08:56:48 2022] POST /postpage1 => generated 25482 bytes in 59 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 1)
+/usr/local/lib/python3.8/dist-packages/bokeh/plotting/helpers.py:539: UserWarning: WheelZoomTool are being repeated
+  warnings.warn("%s are being repeated" % ",".join(repeated_tools))
+[pid: 6613|app: 0|req: 31/31] 172.21.52.27 () {48 vars in 815 bytes} [Wed Jan 19 08:56:49 2022] POST /postpage1 => generated 25482 bytes in 60 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 0)
+/usr/local/lib/python3.8/dist-packages/bokeh/plotting/helpers.py:539: UserWarning: WheelZoomTool are being repeated
+  warnings.warn("%s are being repeated" % ",".join(repeated_tools))
+[pid: 6613|app: 0|req: 32/32] 172.21.52.27 () {48 vars in 815 bytes} [Wed Jan 19 08:56:49 2022] POST /postpage1 => generated 25482 bytes in 60 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 1)
+/usr/local/lib/python3.8/dist-packages/bokeh/plotting/helpers.py:539: UserWarning: WheelZoomTool are being repeated
+  warnings.warn("%s are being repeated" % ",".join(repeated_tools))
+[pid: 6613|app: 0|req: 33/33] 172.21.52.27 () {48 vars in 815 bytes} [Wed Jan 19 08:56:50 2022] POST /postpage1 => generated 25482 bytes in 58 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 0)
+/usr/local/lib/python3.8/dist-packages/bokeh/plotting/helpers.py:539: UserWarning: WheelZoomTool are being repeated
+  warnings.warn("%s are being repeated" % ",".join(repeated_tools))
+[pid: 6613|app: 0|req: 34/34] 172.21.52.27 () {48 vars in 815 bytes} [Wed Jan 19 08:56:50 2022] POST /postpage1 => generated 25482 bytes in 60 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 1)
+/usr/local/lib/python3.8/dist-packages/bokeh/plotting/helpers.py:539: UserWarning: WheelZoomTool are being repeated
+  warnings.warn("%s are being repeated" % ",".join(repeated_tools))
+[pid: 6613|app: 0|req: 35/35] 172.21.52.27 () {48 vars in 815 bytes} [Wed Jan 19 08:56:50 2022] POST /postpage1 => generated 25482 bytes in 62 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 0)
+/usr/local/lib/python3.8/dist-packages/bokeh/plotting/helpers.py:539: UserWarning: WheelZoomTool are being repeated
+  warnings.warn("%s are being repeated" % ",".join(repeated_tools))
+[pid: 6613|app: 0|req: 36/36] 172.21.52.27 () {48 vars in 815 bytes} [Wed Jan 19 08:56:51 2022] POST /postpage1 => generated 25482 bytes in 62 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 1)
+/usr/local/lib/python3.8/dist-packages/bokeh/plotting/helpers.py:539: UserWarning: WheelZoomTool are being repeated
+  warnings.warn("%s are being repeated" % ",".join(repeated_tools))
+[pid: 6613|app: 0|req: 37/37] 172.21.52.27 () {48 vars in 815 bytes} [Wed Jan 19 08:56:51 2022] POST /postpage1 => generated 25482 bytes in 88 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 0)
+/usr/local/lib/python3.8/dist-packages/bokeh/plotting/helpers.py:539: UserWarning: WheelZoomTool are being repeated
+  warnings.warn("%s are being repeated" % ",".join(repeated_tools))
+[pid: 6613|app: 0|req: 38/38] 172.21.52.27 () {48 vars in 815 bytes} [Wed Jan 19 08:56:55 2022] POST /postpage1 => generated 25482 bytes in 58 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 1)
+/usr/local/lib/python3.8/dist-packages/bokeh/plotting/helpers.py:539: UserWarning: WheelZoomTool are being repeated
+  warnings.warn("%s are being repeated" % ",".join(repeated_tools))
+[pid: 6613|app: 0|req: 39/39] 172.21.52.27 () {48 vars in 815 bytes} [Wed Jan 19 08:56:56 2022] POST /postpage1 => generated 25482 bytes in 62 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 0)
+[pid: 6613|app: 0|req: 40/40] 172.21.52.27 () {42 vars in 794 bytes} [Wed Jan 19 08:56:59 2022] GET / => generated 1415 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 1)
+[pid: 6613|app: 0|req: 41/41] 172.21.52.27 () {40 vars in 680 bytes} [Wed Jan 19 08:56:59 2022] GET /static/style.css => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 0)
+[pid: 6613|app: 0|req: 42/42] 172.21.52.27 () {42 vars in 799 bytes} [Wed Jan 19 08:57:00 2022] GET /page2 => generated 3103 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 1)
+/usr/local/lib/python3.8/dist-packages/bokeh/plotting/helpers.py:539: UserWarning: WheelZoomTool are being repeated
+  warnings.warn("%s are being repeated" % ",".join(repeated_tools))
+[pid: 6613|app: 0|req: 43/43] 172.21.52.27 () {48 vars in 815 bytes} [Wed Jan 19 08:57:04 2022] POST /postpage2 => generated 25654 bytes in 62 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 0)
+/usr/local/lib/python3.8/dist-packages/bokeh/plotting/helpers.py:539: UserWarning: WheelZoomTool are being repeated
+  warnings.warn("%s are being repeated" % ",".join(repeated_tools))
+[pid: 6613|app: 0|req: 44/44] 172.21.52.27 () {48 vars in 815 bytes} [Wed Jan 19 08:57:05 2022] POST /postpage2 => generated 25654 bytes in 59 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 1)
+/usr/local/lib/python3.8/dist-packages/bokeh/plotting/helpers.py:539: UserWarning: WheelZoomTool are being repeated
+  warnings.warn("%s are being repeated" % ",".join(repeated_tools))
+[pid: 6613|app: 0|req: 45/45] 172.21.52.27 () {48 vars in 815 bytes} [Wed Jan 19 08:57:06 2022] POST /postpage2 => generated 25654 bytes in 62 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 0)
+/usr/local/lib/python3.8/dist-packages/bokeh/plotting/helpers.py:539: UserWarning: WheelZoomTool are being repeated
+  warnings.warn("%s are being repeated" % ",".join(repeated_tools))
+[pid: 6613|app: 0|req: 46/46] 172.21.52.27 () {48 vars in 815 bytes} [Wed Jan 19 08:57:06 2022] POST /postpage2 => generated 25654 bytes in 59 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 1)
+/usr/local/lib/python3.8/dist-packages/bokeh/plotting/helpers.py:539: UserWarning: WheelZoomTool are being repeated
+  warnings.warn("%s are being repeated" % ",".join(repeated_tools))
+[pid: 6613|app: 0|req: 47/47] 172.21.52.27 () {48 vars in 815 bytes} [Wed Jan 19 08:57:06 2022] POST /postpage2 => generated 25654 bytes in 57 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 0)
+[pid: 6613|app: 0|req: 48/48] 172.21.52.27 () {42 vars in 794 bytes} [Wed Jan 19 08:57:16 2022] GET / => generated 1415 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 1)
+[pid: 6613|app: 0|req: 49/49] 172.21.52.27 () {40 vars in 680 bytes} [Wed Jan 19 08:57:16 2022] GET /static/style.css => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 0)
+[pid: 6613|app: 0|req: 50/50] 172.21.52.27 () {42 vars in 799 bytes} [Wed Jan 19 08:57:18 2022] GET /page3 => generated 2085 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 1)
+[pid: 6613|app: 0|req: 51/51] 172.21.52.27 () {42 vars in 799 bytes} [Wed Jan 19 09:02:37 2022] GET /page1 => generated 2319 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+/usr/local/lib/python3.8/dist-packages/bokeh/plotting/helpers.py:539: UserWarning: WheelZoomTool are being repeated
+  warnings.warn("%s are being repeated" % ",".join(repeated_tools))
+[pid: 6613|app: 0|req: 52/52] 172.21.52.27 () {48 vars in 815 bytes} [Wed Jan 19 09:02:42 2022] POST /postpage1 => generated 25482 bytes in 58 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 1)
+/usr/local/lib/python3.8/dist-packages/bokeh/plotting/helpers.py:539: UserWarning: WheelZoomTool are being repeated
+  warnings.warn("%s are being repeated" % ",".join(repeated_tools))
+[pid: 6613|app: 0|req: 53/53] 172.21.52.27 () {48 vars in 815 bytes} [Wed Jan 19 09:02:42 2022] POST /postpage1 => generated 25482 bytes in 69 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 0)
+/usr/local/lib/python3.8/dist-packages/bokeh/plotting/helpers.py:539: UserWarning: WheelZoomTool are being repeated
+  warnings.warn("%s are being repeated" % ",".join(repeated_tools))
+[pid: 6613|app: 0|req: 54/54] 172.21.52.27 () {48 vars in 815 bytes} [Wed Jan 19 09:02:44 2022] POST /postpage1 => generated 25482 bytes in 57 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 1)
+/usr/local/lib/python3.8/dist-packages/bokeh/plotting/helpers.py:539: UserWarning: WheelZoomTool are being repeated
+  warnings.warn("%s are being repeated" % ",".join(repeated_tools))
+[pid: 6613|app: 0|req: 55/55] 172.21.52.27 () {48 vars in 815 bytes} [Wed Jan 19 09:02:45 2022] POST /postpage1 => generated 25482 bytes in 57 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 0)
+[pid: 6613|app: 0|req: 56/56] 172.21.52.27 () {42 vars in 794 bytes} [Wed Jan 19 09:02:45 2022] GET / => generated 1415 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 1)
+[pid: 6613|app: 0|req: 57/57] 172.21.52.27 () {40 vars in 680 bytes} [Wed Jan 19 09:02:45 2022] GET /static/style.css => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 0)
+[pid: 6613|app: 0|req: 58/58] 172.21.52.27 () {42 vars in 799 bytes} [Wed Jan 19 09:02:47 2022] GET /page3 => generated 2085 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 1)
+/usr/local/lib/python3.8/dist-packages/bokeh/plotting/helpers.py:539: UserWarning: WheelZoomTool are being repeated
+  warnings.warn("%s are being repeated" % ",".join(repeated_tools))
+[pid: 6613|app: 0|req: 59/59] 172.21.52.27 () {48 vars in 815 bytes} [Wed Jan 19 09:02:50 2022] POST /postpage3 => generated 15834 bytes in 47 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 0)
+/usr/local/lib/python3.8/dist-packages/bokeh/plotting/helpers.py:539: UserWarning: WheelZoomTool are being repeated
+  warnings.warn("%s are being repeated" % ",".join(repeated_tools))
+[pid: 6613|app: 0|req: 60/60] 172.21.52.27 () {48 vars in 815 bytes} [Wed Jan 19 09:02:51 2022] POST /postpage3 => generated 15834 bytes in 47 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 1)
+/usr/local/lib/python3.8/dist-packages/bokeh/plotting/helpers.py:539: UserWarning: WheelZoomTool are being repeated
+  warnings.warn("%s are being repeated" % ",".join(repeated_tools))
+[pid: 6613|app: 0|req: 61/61] 172.21.52.27 () {48 vars in 815 bytes} [Wed Jan 19 09:02:52 2022] POST /postpage3 => generated 15834 bytes in 44 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 0)
+/usr/local/lib/python3.8/dist-packages/bokeh/plotting/helpers.py:539: UserWarning: WheelZoomTool are being repeated
+  warnings.warn("%s are being repeated" % ",".join(repeated_tools))
+[pid: 6613|app: 0|req: 62/62] 172.21.52.27 () {48 vars in 815 bytes} [Wed Jan 19 09:02:52 2022] POST /postpage3 => generated 15834 bytes in 48 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 1)
+/usr/local/lib/python3.8/dist-packages/bokeh/plotting/helpers.py:539: UserWarning: WheelZoomTool are being repeated
+  warnings.warn("%s are being repeated" % ",".join(repeated_tools))
+[pid: 6613|app: 0|req: 63/63] 172.21.52.27 () {48 vars in 815 bytes} [Wed Jan 19 09:02:53 2022] POST /postpage3 => generated 15834 bytes in 44 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 0)
+[pid: 6613|app: 0|req: 64/64] 172.21.52.27 () {42 vars in 794 bytes} [Wed Jan 19 09:02:54 2022] GET / => generated 1415 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 1)
+[pid: 6613|app: 0|req: 65/65] 172.21.52.27 () {40 vars in 680 bytes} [Wed Jan 19 09:02:54 2022] GET /static/style.css => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 0)
+[pid: 6613|app: 0|req: 66/66] 172.21.52.27 () {42 vars in 799 bytes} [Wed Jan 19 09:02:58 2022] GET /page5 => generated 1975 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 1)
+/usr/local/lib/python3.8/dist-packages/bokeh/plotting/helpers.py:539: UserWarning: WheelZoomTool are being repeated
+  warnings.warn("%s are being repeated" % ",".join(repeated_tools))
+[pid: 6613|app: 0|req: 67/67] 172.21.52.27 () {48 vars in 813 bytes} [Wed Jan 19 09:03:00 2022] POST /postpage5 => generated 26505 bytes in 63 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 0)
+[pid: 6613|app: 0|req: 68/68] 172.21.52.27 () {42 vars in 794 bytes} [Wed Jan 19 09:03:05 2022] GET / => generated 1415 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 1)
+[pid: 6613|app: 0|req: 69/69] 172.21.52.27 () {40 vars in 680 bytes} [Wed Jan 19 09:03:05 2022] GET /static/style.css => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 0)
+[pid: 6613|app: 0|req: 70/70] 172.21.52.27 () {42 vars in 799 bytes} [Wed Jan 19 09:03:09 2022] GET /page5 => generated 1975 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 1)
+/usr/local/lib/python3.8/dist-packages/bokeh/plotting/helpers.py:539: UserWarning: WheelZoomTool are being repeated
+  warnings.warn("%s are being repeated" % ",".join(repeated_tools))
+[pid: 6613|app: 0|req: 71/71] 172.21.52.27 () {48 vars in 813 bytes} [Wed Jan 19 09:03:11 2022] POST /postpage5 => generated 26505 bytes in 61 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 0)
+[pid: 6613|app: 0|req: 72/72] 172.21.52.27 () {42 vars in 794 bytes} [Wed Jan 19 09:03:13 2022] GET / => generated 1415 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 1)
+[pid: 6613|app: 0|req: 73/73] 172.21.52.27 () {40 vars in 680 bytes} [Wed Jan 19 09:03:13 2022] GET /static/style.css => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 0)
+[pid: 6613|app: 0|req: 74/74] 172.21.52.27 () {42 vars in 799 bytes} [Wed Jan 19 09:03:14 2022] GET /page4 => generated 2035 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 1)
+[pid: 6613|app: 0|req: 75/75] 172.21.52.27 () {48 vars in 813 bytes} [Wed Jan 19 09:03:16 2022] POST /postpage4 => generated 15549 bytes in 66 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 0)
+[pid: 6613|app: 0|req: 76/76] 172.21.52.27 () {48 vars in 813 bytes} [Wed Jan 19 09:03:23 2022] POST /postpage4 => generated 15549 bytes in 69 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 1)
+[pid: 6613|app: 0|req: 77/77] 172.21.52.27 () {42 vars in 794 bytes} [Wed Jan 19 09:03:30 2022] GET / => generated 1415 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 6613|app: 0|req: 78/78] 172.21.52.27 () {40 vars in 680 bytes} [Wed Jan 19 09:03:30 2022] GET /static/style.css => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 1)
+[pid: 6613|app: 0|req: 79/79] 172.21.52.27 () {42 vars in 799 bytes} [Wed Jan 19 09:03:35 2022] GET /page1 => generated 2319 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+/usr/local/lib/python3.8/dist-packages/bokeh/plotting/helpers.py:539: UserWarning: WheelZoomTool are being repeated
+  warnings.warn("%s are being repeated" % ",".join(repeated_tools))
+[pid: 6613|app: 0|req: 80/80] 172.21.52.27 () {48 vars in 815 bytes} [Wed Jan 19 09:03:39 2022] POST /postpage1 => generated 25482 bytes in 59 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 1)
+[pid: 6613|app: 0|req: 81/81] 172.21.52.27 () {42 vars in 799 bytes} [Wed Jan 19 10:43:16 2022] GET /page1 => generated 2319 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+Wed Jan 19 11:45:50 2022 - worker 1 (pid: 6613) is taking too much time to die...NO MERCY !!!
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket /tmp/uwsgi.sock removed.

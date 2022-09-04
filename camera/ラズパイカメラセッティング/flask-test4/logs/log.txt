@@ -1,0 +1,345 @@
+2021-04-10 08:55:44,403 - INFO -  * Running on http://192.168.100.117:8000/ (Press CTRL+C to quit)
+2021-04-10 08:56:00,760 - INFO - 192.168.100.101 - - [10/Apr/2021 08:56:00] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-10 08:56:00,874 - INFO - 192.168.100.101 - - [10/Apr/2021 08:56:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2021-04-10 08:56:04,130 - INFO - 192.168.100.101 - - [10/Apr/2021 08:56:04] "[37mGET /stream HTTP/1.1[0m" 200 -
+2021-04-10 08:56:12,513 - ERROR - Exception on /stream2 [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/pi/flask-test4/app.py", line 40, in stream2
+    return render_template("http://192.168.100.117:8080/stream_simple.html")
+  File "/usr/local/lib/python3.7/dist-packages/flask/templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python3.7/dist-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python3.7/dist-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python3.7/dist-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python3.7/dist-packages/jinja2/loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python3.7/dist-packages/flask/templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "/usr/local/lib/python3.7/dist-packages/flask/templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: http://192.168.100.117:8080/stream_simple.html
+2021-04-10 08:56:12,528 - INFO - 192.168.100.101 - - [10/Apr/2021 08:56:12] "[35m[1mGET /stream2 HTTP/1.1[0m" 500 -
+2021-04-10 08:58:19,400 - INFO - 192.168.100.101 - - [10/Apr/2021 08:58:19] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-10 08:58:29,230 - ERROR - Exception on /stream2 [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/pi/flask-test4/app.py", line 40, in stream2
+    return render_template("http://192.168.100.117:8080/stream_simple.html")
+  File "/usr/local/lib/python3.7/dist-packages/flask/templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python3.7/dist-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python3.7/dist-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python3.7/dist-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python3.7/dist-packages/jinja2/loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python3.7/dist-packages/flask/templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "/usr/local/lib/python3.7/dist-packages/flask/templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: http://192.168.100.117:8080/stream_simple.html
+2021-04-10 08:58:29,233 - INFO - 192.168.100.101 - - [10/Apr/2021 08:58:29] "[35m[1mGET /stream2 HTTP/1.1[0m" 500 -
+2021-04-10 08:58:56,634 - ERROR - Exception on /stream2 [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/pi/flask-test4/app.py", line 40, in stream2
+    return render_template("http://192.168.100.117:8080/stream_simple.html")
+  File "/usr/local/lib/python3.7/dist-packages/flask/templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python3.7/dist-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python3.7/dist-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python3.7/dist-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python3.7/dist-packages/jinja2/loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python3.7/dist-packages/flask/templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "/usr/local/lib/python3.7/dist-packages/flask/templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: http://192.168.100.117:8080/stream_simple.html
+2021-04-10 08:58:56,643 - INFO - 192.168.100.101 - - [10/Apr/2021 08:58:56] "[35m[1mGET /stream2 HTTP/1.1[0m" 500 -
+2021-04-10 08:59:36,328 - INFO -  * Running on http://192.168.100.117:8000/ (Press CTRL+C to quit)
+2021-04-10 08:59:39,362 - ERROR - Exception on /stream2 [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/pi/flask-test4/app.py", line 40, in stream2
+    return render_template("stream_simple.html")
+  File "/usr/local/lib/python3.7/dist-packages/flask/templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python3.7/dist-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python3.7/dist-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python3.7/dist-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python3.7/dist-packages/jinja2/loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python3.7/dist-packages/flask/templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "/usr/local/lib/python3.7/dist-packages/flask/templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: stream_simple.html
+2021-04-10 08:59:39,369 - INFO - 192.168.100.101 - - [10/Apr/2021 08:59:39] "[35m[1mGET /stream2 HTTP/1.1[0m" 500 -
+2021-04-10 09:01:25,670 - INFO -  * Running on http://192.168.100.117:8000/ (Press CTRL+C to quit)
+2021-04-10 09:01:31,371 - ERROR - Exception on /stream2 [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/pi/flask-test4/app.py", line 40, in stream2
+    return render_template("192.168.100.117:8080/stream_simple.html")
+  File "/usr/local/lib/python3.7/dist-packages/flask/templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python3.7/dist-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python3.7/dist-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python3.7/dist-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python3.7/dist-packages/jinja2/loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python3.7/dist-packages/flask/templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "/usr/local/lib/python3.7/dist-packages/flask/templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: 192.168.100.117:8080/stream_simple.html
+2021-04-10 09:01:31,381 - INFO - 192.168.100.101 - - [10/Apr/2021 09:01:31] "[35m[1mGET /stream2 HTTP/1.1[0m" 500 -
+2021-04-10 09:01:34,898 - INFO - 192.168.100.101 - - [10/Apr/2021 09:01:34] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-10 09:01:36,830 - INFO - 192.168.100.101 - - [10/Apr/2021 09:01:36] "[37mGET /stream HTTP/1.1[0m" 200 -
+2021-04-10 09:04:49,417 - INFO -  * Running on http://192.168.100.117:8000/ (Press CTRL+C to quit)
+2021-04-10 09:04:52,436 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/pi/flask-test4/app.py", line 40, in stream2
+    return render_template("192.168.100.117:8080/stream_simple.html")
+  File "/usr/local/lib/python3.7/dist-packages/flask/templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python3.7/dist-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python3.7/dist-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python3.7/dist-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python3.7/dist-packages/jinja2/loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python3.7/dist-packages/flask/templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "/usr/local/lib/python3.7/dist-packages/flask/templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: 192.168.100.117:8080/stream_simple.html
+2021-04-10 09:04:52,443 - INFO - 192.168.100.101 - - [10/Apr/2021 09:04:52] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2021-04-10 09:05:12,418 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/pi/flask-test4/app.py", line 40, in stream2
+    return render_template("192.168.100.117:8080/stream_simple.html")
+  File "/usr/local/lib/python3.7/dist-packages/flask/templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python3.7/dist-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python3.7/dist-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python3.7/dist-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python3.7/dist-packages/jinja2/loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python3.7/dist-packages/flask/templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "/usr/local/lib/python3.7/dist-packages/flask/templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: 192.168.100.117:8080/stream_simple.html
+2021-04-10 09:05:12,419 - INFO - 192.168.100.101 - - [10/Apr/2021 09:05:12] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2021-04-10 09:08:59,741 - INFO -  * Running on http://192.168.100.117:8000/ (Press CTRL+C to quit)
+2021-04-10 09:09:04,985 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/dist-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/pi/flask-test4/app.py", line 40, in stream2
+    return render_template("/home/pi/mjpg/mjpg-streamer/mjpg-streamer-experimental/www/stream_simple.html")
+  File "/usr/local/lib/python3.7/dist-packages/flask/templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/usr/local/lib/python3.7/dist-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python3.7/dist-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/usr/local/lib/python3.7/dist-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/usr/local/lib/python3.7/dist-packages/jinja2/loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/usr/local/lib/python3.7/dist-packages/flask/templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "/usr/local/lib/python3.7/dist-packages/flask/templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: /home/pi/mjpg/mjpg-streamer/mjpg-streamer-experimental/www/stream_simple.html
+2021-04-10 09:09:04,991 - INFO - 192.168.100.101 - - [10/Apr/2021 09:09:04] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2021-04-10 09:10:26,249 - INFO -  * Running on http://192.168.100.117:8000/ (Press CTRL+C to quit)
+2021-04-10 09:10:29,366 - INFO - 192.168.100.101 - - [10/Apr/2021 09:10:29] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-10 09:10:29,454 - INFO - 192.168.100.101 - - [10/Apr/2021 09:10:29] "[37mGET /?action=stream HTTP/1.1[0m" 200 -
+2021-04-10 09:12:25,825 - INFO - 192.168.100.101 - - [10/Apr/2021 09:12:25] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-10 09:12:25,879 - INFO - 192.168.100.101 - - [10/Apr/2021 09:12:25] "[37mGET /?action=stream HTTP/1.1[0m" 200 -
+2021-04-10 09:31:20,813 - INFO -  * Running on http://192.168.100.117:8000/ (Press CTRL+C to quit)
+2021-04-10 11:46:26,071 - INFO -  * Running on http://192.168.100.117:8000/ (Press CTRL+C to quit)
+2021-04-10 11:46:49,657 - INFO - 192.168.100.101 - - [10/Apr/2021 11:46:49] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-10 11:46:49,744 - INFO - 192.168.100.101 - - [10/Apr/2021 11:46:49] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2021-04-10 11:46:51,740 - INFO - 192.168.100.101 - - [10/Apr/2021 11:46:51] "[33mGET /192.168.100.117:8080/stream_simple.html HTTP/1.1[0m" 404 -
+2021-04-10 11:47:39,504 - INFO -  * Running on http://192.168.100.117:8000/ (Press CTRL+C to quit)
+2021-04-10 11:47:45,608 - INFO - 192.168.100.101 - - [10/Apr/2021 11:47:45] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-10 11:47:48,251 - INFO - 192.168.100.101 - - [10/Apr/2021 11:47:48] "[33mGET /stream_simple.html HTTP/1.1[0m" 404 -
+2021-04-10 11:47:57,068 - INFO - 192.168.100.101 - - [10/Apr/2021 11:47:57] "[33mGET /stream_simple.html HTTP/1.1[0m" 404 -
+2021-04-10 11:48:38,122 - INFO -  * Running on http://192.168.100.117:8000/ (Press CTRL+C to quit)
+2021-04-10 11:48:43,158 - INFO - 192.168.100.101 - - [10/Apr/2021 11:48:43] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-10 11:48:45,197 - INFO - 192.168.100.101 - - [10/Apr/2021 11:48:45] "[33mGET /8080/stream_simple.html HTTP/1.1[0m" 404 -
+2021-04-10 11:49:36,750 - INFO -  * Running on http://192.168.100.117:8000/ (Press CTRL+C to quit)
+2021-04-10 11:49:42,003 - INFO - 192.168.100.101 - - [10/Apr/2021 11:49:42] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-10 11:49:44,021 - INFO - 192.168.100.101 - - [10/Apr/2021 11:49:44] "[33mGET /192.168.100.117:8080/stream_simple.html HTTP/1.1[0m" 404 -
+2021-04-10 12:19:35,444 - INFO -  * Running on http://192.168.100.117:8000/ (Press CTRL+C to quit)
+2021-04-10 12:19:38,892 - INFO - 192.168.100.101 - - [10/Apr/2021 12:19:38] "[33mGET /192.168.100.117:8080/stream_simple.html HTTP/1.1[0m" 404 -
+2021-04-10 12:20:24,247 - INFO -  * Running on http://192.168.100.117:8000/ (Press CTRL+C to quit)
+2021-04-10 12:20:37,276 - INFO - 192.168.100.101 - - [10/Apr/2021 12:20:37] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-10 12:21:32,077 - INFO -  * Running on http://192.168.100.117:8000/ (Press CTRL+C to quit)
+2021-04-10 12:21:35,013 - INFO - 192.168.100.101 - - [10/Apr/2021 12:21:35] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-10 12:21:47,304 - INFO - 192.168.100.101 - - [10/Apr/2021 12:21:47] "[37mGET /file1 HTTP/1.1[0m" 200 -
+2021-04-10 12:27:07,398 - INFO - 192.168.100.101 - - [10/Apr/2021 12:27:07] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-10 12:27:07,553 - INFO - 192.168.100.101 - - [10/Apr/2021 12:27:07] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2021-04-10 12:30:17,939 - INFO - 192.168.100.101 - - [10/Apr/2021 12:30:17] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-10 12:30:18,888 - INFO - 192.168.100.101 - - [10/Apr/2021 12:30:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2021-04-10 12:34:37,795 - INFO - 192.168.100.101 - - [10/Apr/2021 12:34:37] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-10 12:34:37,886 - INFO - 192.168.100.101 - - [10/Apr/2021 12:34:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2021-04-10 12:37:05,576 - INFO - 192.168.100.101 - - [10/Apr/2021 12:37:05] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-10 12:37:30,898 - INFO - 192.168.100.101 - - [10/Apr/2021 12:37:30] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-10 12:38:12,162 - INFO - 192.168.100.101 - - [10/Apr/2021 12:38:12] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-10 12:38:13,124 - INFO - 192.168.100.101 - - [10/Apr/2021 12:38:13] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2021-04-10 12:38:27,979 - INFO - 192.168.100.101 - - [10/Apr/2021 12:38:27] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-10 12:38:34,761 - INFO - 192.168.100.101 - - [10/Apr/2021 12:38:34] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-10 12:38:43,013 - INFO - 192.168.100.101 - - [10/Apr/2021 12:38:43] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-10 12:39:21,988 - INFO - 192.168.100.101 - - [10/Apr/2021 12:39:21] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-10 12:39:22,055 - INFO - 192.168.100.101 - - [10/Apr/2021 12:39:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2021-04-10 12:39:22,456 - INFO - 192.168.100.101 - - [10/Apr/2021 12:39:22] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-10 12:39:22,526 - INFO - 192.168.100.101 - - [10/Apr/2021 12:39:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2021-04-10 12:41:24,002 - INFO - 192.168.100.101 - - [10/Apr/2021 12:41:24] "[37mGET /file1 HTTP/1.1[0m" 200 -
+2021-04-10 12:43:50,492 - INFO - 192.168.100.101 - - [10/Apr/2021 12:43:50] "[37mGET /file1 HTTP/1.1[0m" 200 -
+2021-04-10 12:44:03,031 - INFO - 192.168.100.101 - - [10/Apr/2021 12:44:03] "[37mGET /file1 HTTP/1.1[0m" 200 -
+2021-04-10 12:44:17,941 - INFO - 192.168.100.101 - - [10/Apr/2021 12:44:17] "[37mGET /file1 HTTP/1.1[0m" 200 -
+2021-04-10 12:44:41,173 - INFO - 192.168.100.101 - - [10/Apr/2021 12:44:41] "[37mGET /file1 HTTP/1.1[0m" 200 -
+2021-04-10 12:44:42,416 - INFO - 192.168.100.101 - - [10/Apr/2021 12:44:42] "[37mGET /video/save/202104101240.m4v HTTP/1.1[0m" 200 -
+2021-04-10 12:45:22,862 - INFO - 192.168.100.101 - - [10/Apr/2021 12:45:22] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-10 12:45:23,667 - INFO - 192.168.100.101 - - [10/Apr/2021 12:45:23] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2021-04-10 12:45:25,257 - INFO - 192.168.100.101 - - [10/Apr/2021 12:45:25] "[37mGET /file1 HTTP/1.1[0m" 200 -
+2021-04-10 12:45:29,890 - INFO - 192.168.100.101 - - [10/Apr/2021 12:45:29] "[37mGET /video/save/202104101240.m4v HTTP/1.1[0m" 200 -
+2021-04-10 12:46:31,707 - INFO - 192.168.100.101 - - [10/Apr/2021 12:46:31] "[37mGET /file1 HTTP/1.1[0m" 200 -
+2021-04-10 12:46:34,338 - INFO - 192.168.100.101 - - [10/Apr/2021 12:46:34] "[37mGET /video/save/202104101245.m4v HTTP/1.1[0m" 200 -
+2021-04-10 12:46:51,340 - INFO - 192.168.100.101 - - [10/Apr/2021 12:46:51] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-10 12:46:51,433 - INFO - 192.168.100.101 - - [10/Apr/2021 12:46:51] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2021-04-10 12:46:53,533 - INFO - 192.168.100.101 - - [10/Apr/2021 12:46:53] "[37mGET /file1 HTTP/1.1[0m" 200 -
+2021-04-10 12:46:54,707 - INFO - 192.168.100.101 - - [10/Apr/2021 12:46:54] "[37mGET /video/save/202104101245.m4v HTTP/1.1[0m" 200 -
+2021-04-10 12:47:06,334 - INFO - 192.168.100.101 - - [10/Apr/2021 12:47:06] "[37mGET /video/save/202104101240.m4v HTTP/1.1[0m" 200 -
+2021-04-10 12:48:07,729 - INFO - 192.168.100.101 - - [10/Apr/2021 12:48:07] "[37mGET /file1 HTTP/1.1[0m" 200 -
+2021-04-10 12:48:21,754 - INFO - 192.168.100.101 - - [10/Apr/2021 12:48:21] "[37mGET /file1 HTTP/1.1[0m" 200 -
+2021-04-10 12:48:23,897 - INFO - 192.168.100.101 - - [10/Apr/2021 12:48:23] "[37mGET /video/save/202104101245.m4v HTTP/1.1[0m" 200 -
+2021-04-10 12:52:29,724 - INFO -  * Running on http://192.168.100.117:8000/ (Press CTRL+C to quit)
+2021-04-10 12:52:34,088 - INFO - 192.168.100.101 - - [10/Apr/2021 12:52:34] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-10 12:52:35,830 - INFO - 192.168.100.101 - - [10/Apr/2021 12:52:35] "[37mGET /file1 HTTP/1.1[0m" 200 -
+2021-04-10 12:52:37,414 - INFO - 192.168.100.101 - - [10/Apr/2021 12:52:37] "[37mGET /video/save/202104101250.m4v HTTP/1.1[0m" 200 -
+2021-04-10 12:52:48,209 - INFO - 192.168.100.101 - - [10/Apr/2021 12:52:48] "[37mGET /video/save/202104101245.m4v HTTP/1.1[0m" 200 -
+2021-04-10 12:53:01,613 - INFO - 192.168.100.101 - - [10/Apr/2021 12:53:01] "[36mGET /video/save/202104101240.m4v HTTP/1.1[0m" 304 -
+2021-04-10 12:55:43,112 - INFO - 192.168.100.101 - - [10/Apr/2021 12:55:43] "[37mGET /file1 HTTP/1.1[0m" 200 -
+2021-04-10 12:55:44,534 - INFO - 192.168.100.101 - - [10/Apr/2021 12:55:44] "[37mGET /file1 HTTP/1.1[0m" 200 -
+2021-04-10 12:55:51,095 - INFO - 192.168.100.101 - - [10/Apr/2021 12:55:51] "[37mGET /file1 HTTP/1.1[0m" 200 -
+2021-04-10 12:56:03,074 - INFO - 192.168.100.101 - - [10/Apr/2021 12:56:03] "[37mGET /video/save/202104101250.m4v HTTP/1.1[0m" 200 -
+2021-04-10 13:00:16,672 - INFO - 192.168.100.101 - - [10/Apr/2021 13:00:16] "[37mGET /file1 HTTP/1.1[0m" 200 -
+2021-04-10 13:00:18,104 - INFO - 192.168.100.101 - - [10/Apr/2021 13:00:18] "[37mGET /video/save/202104101255.m4v HTTP/1.1[0m" 200 -
+2021-04-10 13:03:38,406 - INFO - 192.168.100.101 - - [10/Apr/2021 13:03:38] "[37mGET /file1 HTTP/1.1[0m" 200 -
+2021-04-10 13:03:40,500 - INFO - 192.168.100.101 - - [10/Apr/2021 13:03:40] "[37mGET /video/save/202104101300.m4v HTTP/1.1[0m" 200 -

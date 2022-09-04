@@ -1,0 +1,9 @@
+C:\Users\18679\Desktop\PLCPCconnectionTool\PLCPCconnectionTool\bin\Release\PLCPCconnectionTool.exe
+C:\Users\18679\Desktop\PLCPCconnectionTool\PLCPCconnectionTool\bin\Release\PLCPCconnectionTool.pdb
+C:\Users\18679\Desktop\PLCPCconnectionTool\PLCPCconnectionTool\obj\x86\Release\PLCPCconnectionTool.frmMain.resources
+C:\Users\18679\Desktop\PLCPCconnectionTool\PLCPCconnectionTool\obj\x86\Release\PLCPCconnectionTool.frmPass.resources
+C:\Users\18679\Desktop\PLCPCconnectionTool\PLCPCconnectionTool\obj\x86\Release\PLCPCconnectionTool.frmSettings.resources
+C:\Users\18679\Desktop\PLCPCconnectionTool\PLCPCconnectionTool\obj\x86\Release\PLCPCconnectionTool.Properties.Resources.resources
+C:\Users\18679\Desktop\PLCPCconnectionTool\PLCPCconnectionTool\obj\x86\Release\PLCPCconnectionTool.csproj.GenerateResource.Cache
+C:\Users\18679\Desktop\PLCPCconnectionTool\PLCPCconnectionTool\obj\x86\Release\PLCPCconnectionTool.exe
+C:\Users\18679\Desktop\PLCPCconnectionTool\PLCPCconnectionTool\obj\x86\Release\PLCPCconnectionTool.pdb

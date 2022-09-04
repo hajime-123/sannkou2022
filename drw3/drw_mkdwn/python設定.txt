@@ -1,0 +1,10 @@
+https://qiita.com/yasthon/items/954dc1aef9752838a0f0
+pip install --upgrade pip
+pipのエラーがでた。pipが帰らぬ人となった。
+https://bootstrap.pypa.io/get-pip.py
+これを参考にしてpipを入れた
+これからは下記で入れるようにする。
+python -m pip install -U pip
+pip install jupyterlab
+Jupyter Lab
+Markdown: Open Preview to the side

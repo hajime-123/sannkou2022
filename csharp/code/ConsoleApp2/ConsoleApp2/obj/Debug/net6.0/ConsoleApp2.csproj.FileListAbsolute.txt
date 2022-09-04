@@ -1,0 +1,15 @@
+F:\csharp\code\ConsoleApp2\ConsoleApp2\bin\Debug\net6.0\ConsoleApp2.exe
+F:\csharp\code\ConsoleApp2\ConsoleApp2\bin\Debug\net6.0\ConsoleApp2.deps.json
+F:\csharp\code\ConsoleApp2\ConsoleApp2\bin\Debug\net6.0\ConsoleApp2.runtimeconfig.json
+F:\csharp\code\ConsoleApp2\ConsoleApp2\bin\Debug\net6.0\ConsoleApp2.dll
+F:\csharp\code\ConsoleApp2\ConsoleApp2\bin\Debug\net6.0\ConsoleApp2.pdb
+F:\csharp\code\ConsoleApp2\ConsoleApp2\obj\Debug\net6.0\ConsoleApp2.csproj.AssemblyReference.cache
+F:\csharp\code\ConsoleApp2\ConsoleApp2\obj\Debug\net6.0\ConsoleApp2.GeneratedMSBuildEditorConfig.editorconfig
+F:\csharp\code\ConsoleApp2\ConsoleApp2\obj\Debug\net6.0\ConsoleApp2.AssemblyInfoInputs.cache
+F:\csharp\code\ConsoleApp2\ConsoleApp2\obj\Debug\net6.0\ConsoleApp2.AssemblyInfo.cs
+F:\csharp\code\ConsoleApp2\ConsoleApp2\obj\Debug\net6.0\ConsoleApp2.csproj.CoreCompileInputs.cache
+F:\csharp\code\ConsoleApp2\ConsoleApp2\obj\Debug\net6.0\ConsoleApp2.dll
+F:\csharp\code\ConsoleApp2\ConsoleApp2\obj\Debug\net6.0\refint\ConsoleApp2.dll
+F:\csharp\code\ConsoleApp2\ConsoleApp2\obj\Debug\net6.0\ConsoleApp2.pdb
+F:\csharp\code\ConsoleApp2\ConsoleApp2\obj\Debug\net6.0\ConsoleApp2.genruntimeconfig.cache
+F:\csharp\code\ConsoleApp2\ConsoleApp2\obj\Debug\net6.0\ref\ConsoleApp2.dll

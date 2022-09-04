@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="static/style.css">
+  </head>
+  <body>
+    <h1>{{ title }}</h1>
+    <p>Welcome to {{ title }}</p>
+    <a href="/page1">蛇行量</a>
+    <a href="/page2">回転</a>
+    <a href="/page3">流量</a>
+    <a href="/page4">振動</a>
+    <a href="/page5">振動推移</a>
+    <a href="/past_index">過去データ</a> 
+    <a href="http://172.24.11.97">カメラ</a><br>
+    <a href="/past_1day">過去データ1日分</a><br>
+    <a href="/file1">file1蛇行量、流量1h</a>
+    <a href="/file4">file4回転1h</a>
+    <a href="/file1_1">file1蛇行量、流量1d</a>
+    <a href="/file4_1">file4回転1d</a>
+    
+    <h2 id='test'>サイト説明</h2>
+    <p class="news-item">
+        MAT装置のセンサデータの表示のサイトです。<br>
+        データ収集用プログラムが動くとDBに値が入ります。<br>
+        本サイトはDBの値をもとにグラフ表示するようになっています。<br>
+        ブラウザの更新ボタンを押すとDBの最新値が取得できます。<br>
+        データ収集用プログラムが動いていないときはDBの値が更新されていないので、グラフも更新されません。<br>
+        <!-- 各urlに関してです。<br>
+        page1は蛇行量<br>
+        page2は回転<br>
+        page3は流量<br>
+        page4は振動<br> -->
+        <!-- page5、6は仮サイトです。<br> -->
+        よろしくお願いします。<br>
+        
+    </p>
+  </body>
+</html>

@@ -1,0 +1,608 @@
+2022-02-14 09:03:19,953 - DEBUG - ÉçÉMÉìÉO äJén
+2022-02-14 09:15:18,422 - DEBUG - ÉçÉMÉìÉO äJén
+2022-02-14 09:15:18,422 - DEBUG - ÉçÉMÉìÉO äJén
+2022-02-14 09:15:18,424 - DEBUG - dbçÏÇËÇ‹Ç∑
+2022-02-14 09:15:18,424 - DEBUG - dbçÏÇËÇ‹Ç∑
+2022-02-14 09:15:18,442 - ERROR - (<class 'mysql.connector.errors.ProgrammingError'>, ProgrammingError(1050, "1050 (42S01): Table 'drawtable_20220214' already exists", '42S01'), <traceback object at 0x0000025F21F9E840>)
+Traceback (most recent call last):
+  File "E:\python\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'drawtable_20220214' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<ipython-input-2-cb2cf37d6ff9>", line 125, in func_dbcreate
+    cur.execute(sql % tablename05)
+  File "E:\python\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "E:\python\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'drawtable_20220214' already exists
+2022-02-14 09:15:18,442 - ERROR - (<class 'mysql.connector.errors.ProgrammingError'>, ProgrammingError(1050, "1050 (42S01): Table 'drawtable_20220214' already exists", '42S01'), <traceback object at 0x0000025F21F9E840>)
+Traceback (most recent call last):
+  File "E:\python\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'drawtable_20220214' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<ipython-input-2-cb2cf37d6ff9>", line 125, in func_dbcreate
+    cur.execute(sql % tablename05)
+  File "E:\python\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "E:\python\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'drawtable_20220214' already exists
+2022-02-14 09:15:18,549 - DEBUG - ÉeÅ[ÉuÉãêî
+2022-02-14 09:15:18,549 - DEBUG - ÉeÅ[ÉuÉãêî
+2022-02-14 09:15:18,550 - DEBUG - 5
+2022-02-14 09:15:18,550 - DEBUG - 5
+2022-02-14 09:22:40,942 - DEBUG - ÉçÉMÉìÉO äJén
+2022-02-14 09:22:40,946 - DEBUG - dbçÏÇËÇ‹Ç∑
+2022-02-14 09:22:40,974 - ERROR - (<class 'mysql.connector.errors.ProgrammingError'>, ProgrammingError(1050, "1050 (42S01): Table 'drawtable_20220214' already exists", '42S01'), <traceback object at 0x0000014E649EF340>)
+Traceback (most recent call last):
+  File "E:\python\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'drawtable_20220214' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<ipython-input-1-ecfd7c209acd>", line 126, in func_dbcreate
+    cur.execute(sql % tablename05)
+  File "E:\python\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "E:\python\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'drawtable_20220214' already exists
+2022-02-14 09:22:40,996 - DEBUG - ÉeÅ[ÉuÉãêî
+2022-02-14 09:22:40,997 - DEBUG - 5
+2022-02-14 09:39:00,224 - DEBUG - ÉçÉMÉìÉO äJén
+2022-02-14 09:39:00,230 - DEBUG - dbçÏÇËÇ‹Ç∑
+2022-02-14 09:39:00,265 - ERROR - (<class 'mysql.connector.errors.ProgrammingError'>, ProgrammingError(1050, "1050 (42S01): Table 'drawtable_20220214' already exists", '42S01'), <traceback object at 0x00000209C7855040>)
+Traceback (most recent call last):
+  File "E:\python\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'drawtable_20220214' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<ipython-input-1-83916b908c64>", line 127, in func_dbcreate
+    cur.execute(sql % tablename05)
+  File "E:\python\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "E:\python\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'drawtable_20220214' already exists
+2022-02-14 09:39:00,288 - DEBUG - ÉeÅ[ÉuÉãêî
+2022-02-14 09:39:00,289 - DEBUG - 5
+2022-02-14 09:42:41,691 - DEBUG - ÉçÉMÉìÉO äJén
+2022-02-14 09:42:41,693 - DEBUG - dbçÏÇËÇ‹Ç∑
+2022-02-14 09:42:41,737 - ERROR - (<class 'mysql.connector.errors.ProgrammingError'>, ProgrammingError(1050, "1050 (42S01): Table 'drawtable_20220214' already exists", '42S01'), <traceback object at 0x000002FA6271A600>)
+Traceback (most recent call last):
+  File "E:\python\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'drawtable_20220214' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<ipython-input-1-ec81cddc1654>", line 126, in func_dbcreate
+    cur.execute(sql % tablename05)
+  File "E:\python\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "E:\python\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'drawtable_20220214' already exists
+2022-02-14 09:42:41,761 - DEBUG - ÉeÅ[ÉuÉãêî
+2022-02-14 09:42:41,761 - DEBUG - 5
+2022-02-14 09:43:31,038 - DEBUG - ÉçÉMÉìÉO äJén
+2022-02-14 09:43:31,038 - DEBUG - ÉçÉMÉìÉO äJén
+2022-02-14 09:43:31,038 - DEBUG - dbçÏÇËÇ‹Ç∑
+2022-02-14 09:43:31,038 - DEBUG - dbçÏÇËÇ‹Ç∑
+2022-02-14 09:43:31,058 - ERROR - (<class 'mysql.connector.errors.ProgrammingError'>, ProgrammingError(1050, "1050 (42S01): Table 'drawtable_20220214' already exists", '42S01'), <traceback object at 0x000002FA6278D4C0>)
+Traceback (most recent call last):
+  File "E:\python\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'drawtable_20220214' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<ipython-input-2-83eaaa573124>", line 126, in func_dbcreate
+    cur.execute(sql % tablename05)
+  File "E:\python\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "E:\python\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'drawtable_20220214' already exists
+2022-02-14 09:43:31,058 - ERROR - (<class 'mysql.connector.errors.ProgrammingError'>, ProgrammingError(1050, "1050 (42S01): Table 'drawtable_20220214' already exists", '42S01'), <traceback object at 0x000002FA6278D4C0>)
+Traceback (most recent call last):
+  File "E:\python\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'drawtable_20220214' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<ipython-input-2-83eaaa573124>", line 126, in func_dbcreate
+    cur.execute(sql % tablename05)
+  File "E:\python\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "E:\python\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'drawtable_20220214' already exists
+2022-02-14 09:43:31,073 - DEBUG - ÉeÅ[ÉuÉãêî
+2022-02-14 09:43:31,073 - DEBUG - ÉeÅ[ÉuÉãêî
+2022-02-14 09:43:31,073 - DEBUG - 5
+2022-02-14 09:43:31,073 - DEBUG - 5
+2022-02-14 09:43:45,142 - DEBUG - ÉçÉMÉìÉO äJén
+2022-02-14 09:43:45,142 - DEBUG - ÉçÉMÉìÉO äJén
+2022-02-14 09:43:45,142 - DEBUG - ÉçÉMÉìÉO äJén
+2022-02-14 09:43:45,145 - DEBUG - dbçÏÇËÇ‹Ç∑
+2022-02-14 09:43:45,145 - DEBUG - dbçÏÇËÇ‹Ç∑
+2022-02-14 09:43:45,145 - DEBUG - dbçÏÇËÇ‹Ç∑
+2022-02-14 09:43:45,161 - ERROR - (<class 'mysql.connector.errors.ProgrammingError'>, ProgrammingError(1050, "1050 (42S01): Table 'drawtable_20220214' already exists", '42S01'), <traceback object at 0x000002FA633B6A80>)
+Traceback (most recent call last):
+  File "E:\python\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'drawtable_20220214' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<ipython-input-3-83eaaa573124>", line 126, in func_dbcreate
+    cur.execute(sql % tablename05)
+  File "E:\python\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "E:\python\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'drawtable_20220214' already exists
+2022-02-14 09:43:45,161 - ERROR - (<class 'mysql.connector.errors.ProgrammingError'>, ProgrammingError(1050, "1050 (42S01): Table 'drawtable_20220214' already exists", '42S01'), <traceback object at 0x000002FA633B6A80>)
+Traceback (most recent call last):
+  File "E:\python\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'drawtable_20220214' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<ipython-input-3-83eaaa573124>", line 126, in func_dbcreate
+    cur.execute(sql % tablename05)
+  File "E:\python\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "E:\python\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'drawtable_20220214' already exists
+2022-02-14 09:43:45,161 - ERROR - (<class 'mysql.connector.errors.ProgrammingError'>, ProgrammingError(1050, "1050 (42S01): Table 'drawtable_20220214' already exists", '42S01'), <traceback object at 0x000002FA633B6A80>)
+Traceback (most recent call last):
+  File "E:\python\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'drawtable_20220214' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<ipython-input-3-83eaaa573124>", line 126, in func_dbcreate
+    cur.execute(sql % tablename05)
+  File "E:\python\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "E:\python\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'drawtable_20220214' already exists
+2022-02-14 09:43:45,183 - DEBUG - ÉeÅ[ÉuÉãêî
+2022-02-14 09:43:45,183 - DEBUG - ÉeÅ[ÉuÉãêî
+2022-02-14 09:43:45,183 - DEBUG - ÉeÅ[ÉuÉãêî
+2022-02-14 09:43:45,184 - DEBUG - 5
+2022-02-14 09:43:45,184 - DEBUG - 5
+2022-02-14 09:43:45,184 - DEBUG - 5
+2022-02-14 09:45:39,990 - DEBUG - ÉçÉMÉìÉO äJén
+2022-02-14 09:45:39,990 - DEBUG - ÉçÉMÉìÉO äJén
+2022-02-14 09:45:39,990 - DEBUG - ÉçÉMÉìÉO äJén
+2022-02-14 09:45:39,990 - DEBUG - ÉçÉMÉìÉO äJén
+2022-02-14 09:45:39,991 - DEBUG - dbçÏÇËÇ‹Ç∑
+2022-02-14 09:45:39,991 - DEBUG - dbçÏÇËÇ‹Ç∑
+2022-02-14 09:45:39,991 - DEBUG - dbçÏÇËÇ‹Ç∑
+2022-02-14 09:45:39,991 - DEBUG - dbçÏÇËÇ‹Ç∑
+2022-02-14 09:45:40,010 - ERROR - (<class 'mysql.connector.errors.ProgrammingError'>, ProgrammingError(1050, "1050 (42S01): Table 'drawtable_20220214' already exists", '42S01'), <traceback object at 0x000002FA5A3065C0>)
+Traceback (most recent call last):
+  File "E:\python\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'drawtable_20220214' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<ipython-input-4-a4ade069c455>", line 126, in func_dbcreate
+    cur.execute(sql % tablename05)
+  File "E:\python\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "E:\python\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'drawtable_20220214' already exists
+2022-02-14 09:45:40,010 - ERROR - (<class 'mysql.connector.errors.ProgrammingError'>, ProgrammingError(1050, "1050 (42S01): Table 'drawtable_20220214' already exists", '42S01'), <traceback object at 0x000002FA5A3065C0>)
+Traceback (most recent call last):
+  File "E:\python\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'drawtable_20220214' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<ipython-input-4-a4ade069c455>", line 126, in func_dbcreate
+    cur.execute(sql % tablename05)
+  File "E:\python\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "E:\python\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'drawtable_20220214' already exists
+2022-02-14 09:45:40,010 - ERROR - (<class 'mysql.connector.errors.ProgrammingError'>, ProgrammingError(1050, "1050 (42S01): Table 'drawtable_20220214' already exists", '42S01'), <traceback object at 0x000002FA5A3065C0>)
+Traceback (most recent call last):
+  File "E:\python\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'drawtable_20220214' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<ipython-input-4-a4ade069c455>", line 126, in func_dbcreate
+    cur.execute(sql % tablename05)
+  File "E:\python\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "E:\python\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'drawtable_20220214' already exists
+2022-02-14 09:45:40,010 - ERROR - (<class 'mysql.connector.errors.ProgrammingError'>, ProgrammingError(1050, "1050 (42S01): Table 'drawtable_20220214' already exists", '42S01'), <traceback object at 0x000002FA5A3065C0>)
+Traceback (most recent call last):
+  File "E:\python\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'drawtable_20220214' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<ipython-input-4-a4ade069c455>", line 126, in func_dbcreate
+    cur.execute(sql % tablename05)
+  File "E:\python\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "E:\python\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'drawtable_20220214' already exists
+2022-02-14 09:45:40,032 - DEBUG - ÉeÅ[ÉuÉãêî
+2022-02-14 09:45:40,032 - DEBUG - ÉeÅ[ÉuÉãêî
+2022-02-14 09:45:40,032 - DEBUG - ÉeÅ[ÉuÉãêî
+2022-02-14 09:45:40,032 - DEBUG - ÉeÅ[ÉuÉãêî
+2022-02-14 09:45:40,033 - DEBUG - 5
+2022-02-14 09:45:40,033 - DEBUG - 5
+2022-02-14 09:45:40,033 - DEBUG - 5
+2022-02-14 09:45:40,033 - DEBUG - 5
+2022-02-14 09:45:55,462 - DEBUG - ÉçÉMÉìÉO äJén
+2022-02-14 09:45:55,462 - DEBUG - ÉçÉMÉìÉO äJén
+2022-02-14 09:45:55,462 - DEBUG - ÉçÉMÉìÉO äJén
+2022-02-14 09:45:55,462 - DEBUG - ÉçÉMÉìÉO äJén
+2022-02-14 09:45:55,462 - DEBUG - ÉçÉMÉìÉO äJén
+2022-02-14 09:45:55,464 - DEBUG - dbçÏÇËÇ‹Ç∑
+2022-02-14 09:45:55,464 - DEBUG - dbçÏÇËÇ‹Ç∑
+2022-02-14 09:45:55,464 - DEBUG - dbçÏÇËÇ‹Ç∑
+2022-02-14 09:45:55,464 - DEBUG - dbçÏÇËÇ‹Ç∑
+2022-02-14 09:45:55,464 - DEBUG - dbçÏÇËÇ‹Ç∑
+2022-02-14 09:45:55,482 - ERROR - (<class 'mysql.connector.errors.ProgrammingError'>, ProgrammingError(1050, "1050 (42S01): Table 'drawtable_20220214' already exists", '42S01'), <traceback object at 0x000002FA633A2F40>)
+Traceback (most recent call last):
+  File "E:\python\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'drawtable_20220214' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<ipython-input-5-a4ade069c455>", line 126, in func_dbcreate
+    cur.execute(sql % tablename05)
+  File "E:\python\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "E:\python\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'drawtable_20220214' already exists
+2022-02-14 09:45:55,482 - ERROR - (<class 'mysql.connector.errors.ProgrammingError'>, ProgrammingError(1050, "1050 (42S01): Table 'drawtable_20220214' already exists", '42S01'), <traceback object at 0x000002FA633A2F40>)
+Traceback (most recent call last):
+  File "E:\python\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'drawtable_20220214' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<ipython-input-5-a4ade069c455>", line 126, in func_dbcreate
+    cur.execute(sql % tablename05)
+  File "E:\python\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "E:\python\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'drawtable_20220214' already exists
+2022-02-14 09:45:55,482 - ERROR - (<class 'mysql.connector.errors.ProgrammingError'>, ProgrammingError(1050, "1050 (42S01): Table 'drawtable_20220214' already exists", '42S01'), <traceback object at 0x000002FA633A2F40>)
+Traceback (most recent call last):
+  File "E:\python\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'drawtable_20220214' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<ipython-input-5-a4ade069c455>", line 126, in func_dbcreate
+    cur.execute(sql % tablename05)
+  File "E:\python\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "E:\python\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'drawtable_20220214' already exists
+2022-02-14 09:45:55,482 - ERROR - (<class 'mysql.connector.errors.ProgrammingError'>, ProgrammingError(1050, "1050 (42S01): Table 'drawtable_20220214' already exists", '42S01'), <traceback object at 0x000002FA633A2F40>)
+Traceback (most recent call last):
+  File "E:\python\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'drawtable_20220214' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<ipython-input-5-a4ade069c455>", line 126, in func_dbcreate
+    cur.execute(sql % tablename05)
+  File "E:\python\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "E:\python\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'drawtable_20220214' already exists
+2022-02-14 09:45:55,482 - ERROR - (<class 'mysql.connector.errors.ProgrammingError'>, ProgrammingError(1050, "1050 (42S01): Table 'drawtable_20220214' already exists", '42S01'), <traceback object at 0x000002FA633A2F40>)
+Traceback (most recent call last):
+  File "E:\python\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'drawtable_20220214' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<ipython-input-5-a4ade069c455>", line 126, in func_dbcreate
+    cur.execute(sql % tablename05)
+  File "E:\python\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "E:\python\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'drawtable_20220214' already exists
+2022-02-14 09:45:55,508 - DEBUG - ÉeÅ[ÉuÉãêî
+2022-02-14 09:45:55,508 - DEBUG - ÉeÅ[ÉuÉãêî
+2022-02-14 09:45:55,508 - DEBUG - ÉeÅ[ÉuÉãêî
+2022-02-14 09:45:55,508 - DEBUG - ÉeÅ[ÉuÉãêî
+2022-02-14 09:45:55,508 - DEBUG - ÉeÅ[ÉuÉãêî
+2022-02-14 09:45:55,509 - DEBUG - 5
+2022-02-14 09:45:55,509 - DEBUG - 5
+2022-02-14 09:45:55,509 - DEBUG - 5
+2022-02-14 09:45:55,509 - DEBUG - 5
+2022-02-14 09:45:55,509 - DEBUG - 5
+2022-02-14 10:08:37,326 - DEBUG - ÉçÉMÉìÉO äJén
+2022-02-14 10:08:37,326 - DEBUG - dbçÏÇËÇ‹Ç∑
+2022-02-14 10:08:37,352 - ERROR - (<class 'mysql.connector.errors.ProgrammingError'>, ProgrammingError(1050, "1050 (42S01): Table 'drawtable_20220214' already exists", '42S01'), <traceback object at 0x00000230E82B58C0>)
+Traceback (most recent call last):
+  File "E:\python\lib\site-packages\mysql\connector\connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Table 'drawtable_20220214' already exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "e:\drw3code\draw3_collsub.py", line 133, in func_dbcreate
+    cur.execute(sql % tablename05)
+  File "E:\python\lib\site-packages\mysql\connector\cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "E:\python\lib\site-packages\mysql\connector\connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.ProgrammingError: 1050 (42S01): Table 'drawtable_20220214' already exists
+2022-02-14 10:08:37,369 - DEBUG - ÉeÅ[ÉuÉãêî
+2022-02-14 10:08:37,369 - DEBUG - 5
+2022-02-14 10:08:37,370 - DEBUG - ÉçÉMÉìÉO äJén
+2022-02-14 10:08:38,066 - DEBUG - 1.0ïb
+2022-02-14 10:08:38,067 - DEBUG - 0838.015173
+2022-02-14 10:08:39,041 - DEBUG - 1.0ïb
+2022-02-14 10:08:39,041 - DEBUG - 0839.010351
+2022-02-14 10:08:40,042 - DEBUG - 1.0ïb
+2022-02-14 10:08:40,042 - DEBUG - 0840.011153
+2022-02-14 10:08:41,060 - DEBUG - 1.0ïb
+2022-02-14 10:08:41,060 - DEBUG - 0841.011423
+2022-02-14 10:08:42,062 - DEBUG - 1.0ïb
+2022-02-14 10:08:42,062 - DEBUG - 0842.014590
+2022-02-14 10:08:43,037 - DEBUG - 1.0ïb
+2022-02-14 10:08:43,037 - DEBUG - 0843.006243
+2022-02-14 10:08:44,045 - DEBUG - 1.0ïb
+2022-02-14 10:08:44,045 - DEBUG - 0844.014507
+2022-02-14 10:08:45,052 - DEBUG - 1.0ïb
+2022-02-14 10:08:45,052 - DEBUG - 0845.004731
+2022-02-14 10:08:46,055 - DEBUG - 1.0ïb
+2022-02-14 10:08:46,055 - DEBUG - 0846.007233
+2022-02-14 10:08:47,060 - DEBUG - 1.0ïb
+2022-02-14 10:08:47,060 - DEBUG - 0847.007480
+2022-02-14 10:08:48,047 - DEBUG - 1.0ïb
+2022-02-14 10:08:48,047 - DEBUG - 0848.005769
+2022-02-14 10:08:49,031 - DEBUG - 1.0ïb
+2022-02-14 10:08:49,031 - DEBUG - 0849.000370
+2022-02-14 10:08:50,074 - DEBUG - 1.0ïb
+2022-02-14 10:08:50,074 - DEBUG - 0850.008354
+2022-02-14 10:08:51,045 - DEBUG - 1.0ïb
+2022-02-14 10:08:51,045 - DEBUG - 0851.002141
+2022-02-14 10:08:52,043 - DEBUG - 1.0ïb
+2022-02-14 10:08:52,043 - DEBUG - 0852.005977
+2022-02-14 10:08:53,048 - DEBUG - 1.0ïb
+2022-02-14 10:08:53,048 - DEBUG - 0853.011254
+2022-02-14 10:08:54,061 - DEBUG - 1.0ïb
+2022-02-14 10:08:54,062 - DEBUG - 0854.014841
+2022-02-14 10:08:55,039 - DEBUG - 1.0ïb
+2022-02-14 10:08:55,039 - DEBUG - 0855.008181
+2022-02-14 10:08:56,050 - DEBUG - 1.0ïb
+2022-02-14 10:08:56,050 - DEBUG - 0856.013359
+2022-02-14 10:08:57,058 - DEBUG - 1.0ïb
+2022-02-14 10:08:57,058 - DEBUG - 0857.006757
+2022-02-14 10:08:58,046 - DEBUG - 1.0ïb
+2022-02-14 10:08:58,046 - DEBUG - 0858.009393
+2022-02-14 10:08:59,070 - DEBUG - 1.0ïb
+2022-02-14 10:08:59,070 - DEBUG - 0859.014609
+2022-02-14 10:09:00,045 - DEBUG - 1.0ïb
+2022-02-14 10:09:00,045 - DEBUG - 0900.014593
+2022-02-14 10:09:01,063 - DEBUG - 1.0ïb
+2022-02-14 10:09:01,063 - DEBUG - 0901.002862
+2022-02-14 10:09:02,045 - DEBUG - 1.0ïb
+2022-02-14 10:09:02,045 - DEBUG - 0902.006643
+2022-02-14 10:09:03,053 - DEBUG - 1.0ïb
+2022-02-14 10:09:03,053 - DEBUG - 0903.011357
+2022-02-14 10:09:04,043 - DEBUG - 1.0ïb
+2022-02-14 10:09:04,043 - DEBUG - 0904.003454
+2022-02-14 10:09:05,039 - DEBUG - 1.0ïb
+2022-02-14 10:09:05,039 - DEBUG - 0905.008534
+2022-02-14 10:09:06,061 - DEBUG - 1.0ïb
+2022-02-14 10:09:06,061 - DEBUG - 0906.014904
+2022-02-14 10:09:07,049 - DEBUG - 1.0ïb
+2022-02-14 10:09:07,050 - DEBUG - 0907.000693
+2022-02-14 10:09:08,046 - DEBUG - 1.0ïb
+2022-02-14 10:09:08,046 - DEBUG - 0908.004113
+2022-02-14 10:09:09,045 - DEBUG - 1.0ïb
+2022-02-14 10:09:09,045 - DEBUG - 0909.008889
+2022-02-14 10:09:10,039 - DEBUG - 1.0ïb
+2022-02-14 10:09:10,039 - DEBUG - 0910.008601
+2022-02-14 10:09:11,038 - DEBUG - 1.0ïb
+2022-02-14 10:09:11,039 - DEBUG - 0911.004519
+2022-02-14 10:09:12,071 - DEBUG - 1.0ïb
+2022-02-14 10:09:12,071 - DEBUG - 0912.011113
+2022-02-14 10:09:13,032 - DEBUG - 1.0ïb
+2022-02-14 10:09:13,032 - DEBUG - 0913.002391
+2022-02-14 10:09:14,047 - DEBUG - 1.0ïb
+2022-02-14 10:09:14,047 - DEBUG - 0914.000525
+2022-02-14 10:09:15,066 - DEBUG - 1.0ïb
+2022-02-14 10:09:15,066 - DEBUG - 0915.008390
+2022-02-14 10:09:16,064 - DEBUG - 1.0ïb
+2022-02-14 10:09:16,064 - DEBUG - 0916.011069
+2022-02-14 10:09:17,068 - DEBUG - 1.0ïb
+2022-02-14 10:09:17,068 - DEBUG - 0917.014178
+2022-02-14 10:09:18,033 - DEBUG - 1.0ïb
+2022-02-14 10:09:18,033 - DEBUG - 0918.002930
+2022-02-14 10:09:19,049 - DEBUG - 1.0ïb
+2022-02-14 10:09:19,050 - DEBUG - 0919.011667
+2022-02-14 10:09:20,033 - DEBUG - 1.0ïb
+2022-02-14 10:09:20,033 - DEBUG - 0920.002680
+2022-02-14 10:09:21,049 - DEBUG - 1.0ïb
+2022-02-14 10:09:21,049 - DEBUG - 0921.007045
+2022-02-14 10:09:22,048 - DEBUG - 1.0ïb
+2022-02-14 10:09:22,048 - DEBUG - 0922.008586
+2022-02-14 10:09:23,050 - DEBUG - 1.0ïb
+2022-02-14 10:09:23,050 - DEBUG - 0923.014075
+2022-02-14 10:09:24,065 - DEBUG - 1.0ïb
+2022-02-14 10:09:24,065 - DEBUG - 0924.005476
+2022-02-14 10:09:25,074 - DEBUG - 1.0ïb
+2022-02-14 10:09:25,074 - DEBUG - 0925.011987
+2022-02-14 10:09:26,036 - DEBUG - 1.0ïb
+2022-02-14 10:09:26,036 - DEBUG - 0926.000541
+2022-02-14 10:09:27,032 - DEBUG - 1.0ïb
+2022-02-14 10:09:27,032 - DEBUG - 0927.001904
+2022-02-14 10:09:28,037 - DEBUG - 1.0ïb
+2022-02-14 10:09:28,037 - DEBUG - 0928.001798
+2022-02-14 10:09:29,031 - DEBUG - 1.0ïb
+2022-02-14 10:09:29,031 - DEBUG - 0929.000499
+2022-02-14 10:09:30,056 - DEBUG - 1.0ïb
+2022-02-14 10:09:30,056 - DEBUG - 0930.005248
+2022-02-14 10:09:31,033 - DEBUG - 1.0ïb
+2022-02-14 10:09:31,033 - DEBUG - 0931.002166
+2022-02-14 10:09:32,056 - DEBUG - 1.0ïb
+2022-02-14 10:09:32,056 - DEBUG - 0932.000410
+2022-02-14 10:09:33,033 - DEBUG - 1.0ïb
+2022-02-14 10:09:33,033 - DEBUG - 0933.002899
+2022-02-14 10:09:34,062 - DEBUG - 1.0ïb
+2022-02-14 10:09:34,062 - DEBUG - 0934.000762
+2022-02-14 10:09:35,031 - DEBUG - 1.0ïb
+2022-02-14 10:09:35,031 - DEBUG - 0935.000378
+2022-02-14 10:09:36,031 - DEBUG - 1.0ïb
+2022-02-14 10:09:36,031 - DEBUG - 0936.000150
+2022-02-14 10:09:37,067 - DEBUG - 1.0ïb
+2022-02-14 10:09:37,067 - DEBUG - 0937.006754
+2022-02-14 10:09:38,051 - DEBUG - 1.0ïb
+2022-02-14 10:09:38,051 - DEBUG - 0938.010439
+2022-02-14 10:09:39,057 - DEBUG - 1.0ïb
+2022-02-14 10:09:39,057 - DEBUG - 0939.013701
+2022-02-14 10:09:40,036 - DEBUG - 1.0ïb
+2022-02-14 10:09:40,036 - DEBUG - 0940.005494
+2022-02-14 10:09:41,056 - DEBUG - 1.0ïb
+2022-02-14 10:09:41,056 - DEBUG - 0941.013344
+2022-02-14 10:09:42,067 - DEBUG - 1.0ïb
+2022-02-14 10:09:42,067 - DEBUG - 0942.003165
+2022-02-14 10:09:43,047 - DEBUG - 1.0ïb
+2022-02-14 10:09:43,047 - DEBUG - 0943.015335
+2022-02-14 10:09:44,047 - DEBUG - 1.0ïb
+2022-02-14 10:09:44,047 - DEBUG - 0944.000314
+2022-02-14 10:09:45,069 - DEBUG - 1.0ïb
+2022-02-14 10:09:45,069 - DEBUG - 0945.015567
+2022-02-14 10:09:46,039 - DEBUG - 1.0ïb
+2022-02-14 10:09:46,040 - DEBUG - 0946.002561
+2022-02-14 10:09:47,033 - DEBUG - 1.0ïb
+2022-02-14 10:09:47,033 - DEBUG - 0947.000948
+2022-02-14 10:09:48,042 - DEBUG - 1.0ïb
+2022-02-14 10:09:48,042 - DEBUG - 0948.006533
+2022-02-14 10:09:49,065 - DEBUG - 1.0ïb
+2022-02-14 10:09:49,065 - DEBUG - 0949.009970
+2022-02-14 10:09:50,044 - DEBUG - 1.0ïb
+2022-02-14 10:09:50,044 - DEBUG - 0950.013818
+2022-02-14 10:09:51,036 - DEBUG - 1.0ïb
+2022-02-14 10:09:51,036 - DEBUG - 0951.004129
+2022-02-14 10:09:52,070 - DEBUG - 1.0ïb
+2022-02-14 10:09:52,070 - DEBUG - 0952.013416
+2022-02-14 10:09:53,053 - DEBUG - 1.0ïb
+2022-02-14 10:09:53,053 - DEBUG - 0953.015391
+2022-02-14 10:09:54,041 - DEBUG - 1.0ïb
+2022-02-14 10:09:54,041 - DEBUG - 0954.005268
+2022-02-14 10:09:55,044 - DEBUG - 1.0ïb
+2022-02-14 10:09:55,044 - DEBUG - 0955.013505
+2022-02-14 10:09:56,078 - DEBUG - 1.0ïb
+2022-02-14 10:09:56,078 - DEBUG - 0956.015241
+2022-02-14 10:09:57,058 - DEBUG - 1.0ïb
+2022-02-14 10:09:57,058 - DEBUG - 0957.011310
+2022-02-14 10:09:58,039 - DEBUG - 1.0ïb
+2022-02-14 10:09:58,039 - DEBUG - 0958.000167
+2022-02-14 10:09:59,067 - DEBUG - 1.0ïb
+2022-02-14 10:09:59,067 - DEBUG - 0959.002718
+2022-02-14 10:10:00,042 - DEBUG - 1.0ïb
+2022-02-14 10:10:00,042 - DEBUG - 1000.011677
+2022-02-14 10:10:01,038 - DEBUG - 1.0ïb
+2022-02-14 10:10:01,038 - DEBUG - 1001.002565
+2022-02-14 10:10:02,051 - DEBUG - 1.0ïb
+2022-02-14 10:10:02,052 - DEBUG - 1002.008997
+2022-02-14 10:10:03,044 - DEBUG - 1.0ïb
+2022-02-14 10:10:03,044 - DEBUG - 1003.009987
+2022-02-14 10:10:04,047 - DEBUG - 1.0ïb
+2022-02-14 10:10:04,047 - DEBUG - 1004.000366
+2022-02-14 10:10:05,037 - DEBUG - 1.0ïb
+2022-02-14 10:10:05,037 - DEBUG - 1005.006471
+2022-02-14 10:10:06,051 - DEBUG - 1.0ïb
+2022-02-14 10:10:06,051 - DEBUG - 1006.008480
+2022-02-14 10:10:07,040 - DEBUG - 1.0ïb
+2022-02-14 10:10:07,040 - DEBUG - 1007.006619
+2022-02-14 10:10:08,040 - DEBUG - 1.0ïb
+2022-02-14 10:10:08,040 - DEBUG - 1008.007421
+2022-02-14 10:10:09,047 - DEBUG - 1.0ïb
+2022-02-14 10:10:09,047 - DEBUG - 1009.010664
+2022-02-14 10:10:10,031 - DEBUG - 1.0ïb
+2022-02-14 10:10:10,031 - DEBUG - 1010.000241
+2022-02-14 10:10:11,093 - DEBUG - 1.0ïb
+2022-02-14 10:10:11,093 - DEBUG - 1011.015527
+2022-02-14 10:10:12,046 - DEBUG - 1.0ïb
+2022-02-14 10:10:12,046 - DEBUG - 1012.015375
+2022-02-14 10:10:13,047 - DEBUG - 1.0ïb
+2022-02-14 10:10:13,048 - DEBUG - 1013.003864
+2022-02-14 10:10:14,046 - DEBUG - 1.0ïb
+2022-02-14 10:10:14,046 - DEBUG - 1014.004580
+2022-02-14 10:10:15,040 - DEBUG - 1.0ïb
+2022-02-14 10:10:15,040 - DEBUG - 1015.009256
+2022-02-14 10:10:16,048 - DEBUG - 1.0ïb
+2022-02-14 10:10:16,048 - DEBUG - 1016.013751
+2022-02-14 10:10:17,040 - DEBUG - 1.0ïb
+2022-02-14 10:10:17,040 - DEBUG - 1017.004400
+2022-02-14 10:10:18,047 - DEBUG - 1.0ïb
+2022-02-14 10:10:18,047 - DEBUG - 1018.000533
+2022-02-14 10:10:19,040 - DEBUG - 1.0ïb
+2022-02-14 10:10:19,040 - DEBUG - 1019.000176
+2022-02-14 10:10:20,039 - DEBUG - 1.0ïb
+2022-02-14 10:10:20,039 - DEBUG - 1020.008532

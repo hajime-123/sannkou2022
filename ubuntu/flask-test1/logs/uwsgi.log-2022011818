@@ -1,0 +1,59 @@
+*** Starting uWSGI 2.0.20 (64bit) on [Tue Jan 18 17:53:29 2022] ***
+compiled with version: 9.3.0 on 20 December 2021 07:54:39
+os: Linux-5.11.0-43-generic #47~20.04.2-Ubuntu SMP Mon Dec 13 11:06:56 UTC 2021
+nodename: haji
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/haji/flask-test1
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/haji/flask-test1
+your processes number limit is 31184
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uwsgi socket 0 bound to UNIX address /tmp/uwsgi.sock fd 6
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.10 (default, Nov 26 2021, 20:14:08)  [GCC 9.3.0]
+Python main interpreter initialized at 0x562da03a3620
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 166688 bytes (162 KB) for 2 cores
+*** Operational MODE: threaded ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 4068)
+spawned uWSGI worker 1 (pid: 4069, cores: 2)
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x562da03a3620 pid: 4069 (default app)
+/usr/local/lib/python3.8/dist-packages/bokeh/plotting/helpers.py:539: UserWarning: WheelZoomTool are being repeated
+  warnings.warn("%s are being repeated" % ",".join(repeated_tools))
+[pid: 4069|app: 0|req: 1/1] 172.21.52.27 () {48 vars in 832 bytes} [Tue Jan 18 17:56:36 2022] POST /past_postpage2 => generated 471928 bytes in 185 msecs (HTTP/1.1 200) 2 headers in 75 bytes (3 switches on core 0)
+/usr/local/lib/python3.8/dist-packages/bokeh/plotting/helpers.py:539: UserWarning: WheelZoomTool are being repeated
+  warnings.warn("%s are being repeated" % ",".join(repeated_tools))
+[pid: 4069|app: 0|req: 2/2] 172.21.52.27 () {48 vars in 832 bytes} [Tue Jan 18 17:56:47 2022] POST /past_postpage2 => generated 471928 bytes in 151 msecs (HTTP/1.1 200) 2 headers in 75 bytes (2 switches on core 1)
+/usr/local/lib/python3.8/dist-packages/bokeh/plotting/helpers.py:539: UserWarning: WheelZoomTool are being repeated
+  warnings.warn("%s are being repeated" % ",".join(repeated_tools))
+[pid: 4069|app: 0|req: 3/3] 172.21.52.27 () {48 vars in 832 bytes} [Tue Jan 18 17:56:48 2022] POST /past_postpage2 => generated 471928 bytes in 174 msecs (HTTP/1.1 200) 2 headers in 75 bytes (2 switches on core 0)
+[pid: 4069|app: 0|req: 4/4] 172.21.52.27 () {42 vars in 799 bytes} [Tue Jan 18 17:59:25 2022] GET /past_page2 => generated 6362 bytes in 8 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 1)
+[pid: 4069|app: 0|req: 5/5] 172.21.52.27 () {40 vars in 685 bytes} [Tue Jan 18 17:59:26 2022] GET /static/jquery.min2.js => generated 232 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 0)
+[pid: 4069|app: 0|req: 6/6] 172.21.52.27 () {42 vars in 819 bytes} [Tue Jan 18 17:59:31 2022] GET /past_page2 => generated 6362 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 1)
+[pid: 4069|app: 0|req: 7/7] 172.21.52.27 () {40 vars in 685 bytes} [Tue Jan 18 17:59:31 2022] GET /static/jquery.min2.js => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 0)
+/usr/local/lib/python3.8/dist-packages/bokeh/plotting/helpers.py:539: UserWarning: WheelZoomTool are being repeated
+  warnings.warn("%s are being repeated" % ",".join(repeated_tools))
+[pid: 4069|app: 0|req: 8/8] 172.21.52.27 () {48 vars in 832 bytes} [Tue Jan 18 17:59:40 2022] POST /past_postpage2 => generated 471928 bytes in 176 msecs (HTTP/1.1 200) 2 headers in 75 bytes (3 switches on core 1)
+/usr/local/lib/python3.8/dist-packages/bokeh/plotting/helpers.py:539: UserWarning: WheelZoomTool are being repeated
+  warnings.warn("%s are being repeated" % ",".join(repeated_tools))
+[pid: 4069|app: 0|req: 9/9] 172.21.52.27 () {48 vars in 832 bytes} [Tue Jan 18 17:59:55 2022] POST /past_postpage2 => generated 471928 bytes in 151 msecs (HTTP/1.1 200) 2 headers in 75 bytes (2 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket /tmp/uwsgi.sock removed.

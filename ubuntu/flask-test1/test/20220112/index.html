@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="static/jquery.min.js"></script>
+    <link rel="stylesheet" href="static/bokeh-0.13.0.min.css" type="text/css" />
+    <script type="text/javascript" src="static/bokeh-0.13.0.min.js"></script>
+  </head>
+  <body>
+    <div id="main">
+      <h1>{{ title }}</h1>
+      <p>Welcome to {{ title }}</p>
+      <a href="/test1">test1</a>   
+      <p id="test">
+          テストサイトです。<br>
+          これから機能を追加していきます
+      </p>
+      <form action = "/test2" method = "POST"><!--211217追加-->
+      <input type = "number" id="text" name = "number" />
+      <input id="btn" type="button" value="ボタン1"/>
+      <input id="btn2" type="button" value="ajax"/>
+      <input id="btn3" type="button" value="ajax_graph"/>
+      <div id="data1"></div>
+      <div id="data2"></div>
+      <div id="data3"></div>
+      <p><input type = "submit" value = "submit" /></p><!--211217追加-->
+    </form><!--211217追加-->
+    </div>
+    <script>
+    $('#btn').click(function() {
+        console.log('クリックされました！');
+        console.log($("#text").val());
+        var textData = JSON.stringify({"t":$("#text").val()})
+        console.log(textData);
+        var result = JSON.parse(textData).t;
+        console.log(result);
+        $("#data1").html(result);
+    })
+    </script>
+    <script>       
+      $(document).ready(function(){
+        $("#btn2").click(function() {
+          var textData = JSON.stringify({"t":$("#text").val()});
+          $.ajax({
+            type:'POST',
+            url:'/postpage1',
+            data:textData,
+            contentType:'application/json',
+            success:function(data) {
+              var result = JSON.parse(data.ResultSet).result;
+               console.log(result);
+              $("#data1").html(result);
+            },
+            error:function(data) {
+              console.log("error");
+          }
+          });
+          return false;
+        });
+});
+  </script>
+  <script>       
+        $(document).ready(function(){
+          $("#btn3").click(function() {
+            var textData = JSON.stringify({"t":$("#text").val()});
+            $.ajax({
+              type:'POST',
+              url:'/postpage2',
+              data:textData,
+              contentType:'application/json',
+              success:function(data) {
+                var result2 = JSON.parse(data.ResultSet).result2;
+                var result3 = JSON.parse(data.ResultSet).result3;
+                $("#data2").html(result2);
+                $("#data3").html(result3);
+              }
+            });
+            return false;
+          });
+  });
+           </script>
+  </body>
+</html>

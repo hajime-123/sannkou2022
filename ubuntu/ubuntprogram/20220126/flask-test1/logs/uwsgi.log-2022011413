@@ -1,0 +1,41 @@
+*** Starting uWSGI 2.0.20 (64bit) on [Fri Jan 14 12:09:44 2022] ***
+compiled with version: 9.3.0 on 20 December 2021 07:54:39
+os: Linux-5.11.0-43-generic #47~20.04.2-Ubuntu SMP Mon Dec 13 11:06:56 UTC 2021
+nodename: haji
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/haji/flask-test1/logs
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/haji/flask-test1
+your processes number limit is 31184
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uwsgi socket 0 bound to UNIX address /tmp/uwsgi.sock fd 6
+Python version: 3.8.10 (default, Nov 26 2021, 20:14:08)  [GCC 9.3.0]
+Python main interpreter initialized at 0x564390982750
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 166688 bytes (162 KB) for 2 cores
+*** Operational MODE: threaded ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 4571)
+spawned uWSGI worker 1 (pid: 4572, cores: 2)
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x564390982750 pid: 4572 (default app)
+[pid: 4572|app: 0|req: 1/1] 172.21.52.27 () {42 vars in 799 bytes} [Fri Jan 14 12:09:52 2022] GET /page4 => generated 2035 bytes in 8 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 4572|app: 0|req: 2/2] 172.21.52.27 () {48 vars in 813 bytes} [Fri Jan 14 12:09:55 2022] POST /postpage4 => generated 15549 bytes in 70 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 1)
+[pid: 4572|app: 0|req: 3/3] 172.21.52.27 () {48 vars in 815 bytes} [Fri Jan 14 12:10:01 2022] POST /postpage4 => generated 15549 bytes in 68 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 0)
+[pid: 4572|app: 0|req: 4/4] 172.21.52.27 () {48 vars in 815 bytes} [Fri Jan 14 12:10:02 2022] POST /postpage4 => generated 15549 bytes in 69 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 1)
+[pid: 4572|app: 0|req: 5/5] 172.21.52.27 () {48 vars in 813 bytes} [Fri Jan 14 12:10:07 2022] POST /postpage4 => generated 15549 bytes in 63 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 0)
+[pid: 4572|app: 0|req: 6/6] 172.21.52.27 () {48 vars in 813 bytes} [Fri Jan 14 12:10:09 2022] POST /postpage4 => generated 15549 bytes in 72 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 1)
+[pid: 4572|app: 0|req: 7/7] 172.21.52.27 () {48 vars in 813 bytes} [Fri Jan 14 12:10:12 2022] POST /postpage4 => generated 15549 bytes in 66 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 0)
+[pid: 4572|app: 0|req: 8/8] 172.21.52.27 () {42 vars in 794 bytes} [Fri Jan 14 12:10:15 2022] GET / => generated 1325 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 1)
+[pid: 4572|app: 0|req: 9/9] 172.21.52.27 () {40 vars in 680 bytes} [Fri Jan 14 12:10:15 2022] GET /static/style.css => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket /tmp/uwsgi.sock removed.

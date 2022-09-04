@@ -1,0 +1,224 @@
+*** Starting uWSGI 2.0.20 (64bit) on [Wed Jan 26 19:21:54 2022] ***
+compiled with version: 9.3.0 on 20 December 2021 07:54:39
+os: Linux-5.11.0-43-generic #47~20.04.2-Ubuntu SMP Mon Dec 13 11:06:56 UTC 2021
+nodename: haji
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/haji/flask-test1
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/haji/flask-test1
+your processes number limit is 31184
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uwsgi socket 0 bound to UNIX address /tmp/uwsgi.sock fd 6
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.10 (default, Nov 26 2021, 20:14:08)  [GCC 9.3.0]
+Python main interpreter initialized at 0x55f1a58a3630
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 166688 bytes (162 KB) for 2 cores
+*** Operational MODE: threaded ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 44819)
+spawned uWSGI worker 1 (pid: 44820, cores: 2)
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55f1a58a3630 pid: 44820 (default app)
+[pid: 44820|app: 0|req: 1/1] 172.21.52.27 () {40 vars in 748 bytes} [Wed Jan 26 19:22:16 2022] GET / => generated 1565 bytes in 8 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 44820|app: 0|req: 2/2] 172.21.52.27 () {40 vars in 680 bytes} [Wed Jan 26 19:22:16 2022] GET /static/style.css => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 1)
+[pid: 44820|app: 0|req: 3/3] 172.21.52.27 () {42 vars in 807 bytes} [Wed Jan 26 19:22:18 2022] GET /past_1day => generated 3975 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 44820|app: 0|req: 4/4] 172.21.52.27 () {40 vars in 684 bytes} [Wed Jan 26 19:22:18 2022] GET /static/jquery.min2.js => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 1)
+/usr/local/lib/python3.8/dist-packages/bokeh/plotting/helpers.py:539: UserWarning: WheelZoomTool are being repeated
+  warnings.warn("%s are being repeated" % ",".join(repeated_tools))
+/usr/local/lib/python3.8/dist-packages/bokeh/plotting/helpers.py:539: UserWarning: WheelZoomTool are being repeated
+  warnings.warn("%s are being repeated" % ",".join(repeated_tools))
+[pid: 44820|app: 0|req: 5/5] 172.21.52.27 () {48 vars in 837 bytes} [Wed Jan 26 19:22:25 2022] POST /past_postpage_1day => generated 8022502 bytes in 2681 msecs (HTTP/1.1 200) 2 headers in 76 bytes (43 switches on core 0)
+/usr/local/lib/python3.8/dist-packages/bokeh/plotting/helpers.py:539: UserWarning: WheelZoomTool are being repeated
+  warnings.warn("%s are being repeated" % ",".join(repeated_tools))
+/usr/local/lib/python3.8/dist-packages/bokeh/plotting/helpers.py:539: UserWarning: WheelZoomTool are being repeated
+  warnings.warn("%s are being repeated" % ",".join(repeated_tools))
+[pid: 44820|app: 0|req: 6/6] 172.21.52.27 () {48 vars in 837 bytes} [Wed Jan 26 19:22:39 2022] POST /past_postpage_1day => generated 6453742 bytes in 2109 msecs (HTTP/1.1 200) 2 headers in 76 bytes (33 switches on core 1)
+[pid: 44820|app: 0|req: 7/7] 172.21.52.27 () {42 vars in 798 bytes} [Wed Jan 26 19:22:48 2022] GET / => generated 1565 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 44820|app: 0|req: 8/8] 172.21.52.27 () {40 vars in 680 bytes} [Wed Jan 26 19:22:48 2022] GET /static/style.css => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 1)
+[pid: 44820|app: 0|req: 9/9] 172.21.52.27 () {42 vars in 803 bytes} [Wed Jan 26 19:22:53 2022] GET /file1_1 => generated 125 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 44820|app: 0|req: 10/10] 172.21.52.27 () {42 vars in 824 bytes} [Wed Jan 26 19:22:54 2022] GET /save2/1/202201 => generated 286 bytes in 2 msecs (HTTP/1.1 308) 3 headers in 148 bytes (1 switches on core 1)
+[pid: 44820|app: 0|req: 11/11] 172.21.52.27 () {42 vars in 826 bytes} [Wed Jan 26 19:22:54 2022] GET /save2/1/202201/ => generated 669 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 44820|app: 0|req: 12/12] 172.21.52.27 () {42 vars in 866 bytes} [Wed Jan 26 19:22:56 2022] GET /save2/1/202201/2022011109_1.csv => generated 131 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 7 headers in 282 bytes (0 switches on core 1)
+[pid: 44820|app: 0|req: 13/13] 172.21.52.27 () {42 vars in 803 bytes} [Wed Jan 26 19:23:01 2022] GET /file4_1 => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+Wed Jan 26 19:24:33 2022 - worker 1 (pid: 44820) is taking too much time to die...NO MERCY !!!
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket /tmp/uwsgi.sock removed.
+*** Starting uWSGI 2.0.20 (64bit) on [Wed Jan 26 19:25:37 2022] ***
+compiled with version: 9.3.0 on 20 December 2021 07:54:39
+os: Linux-5.11.0-43-generic #47~20.04.2-Ubuntu SMP Mon Dec 13 11:06:56 UTC 2021
+nodename: haji
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/haji/flask-test1
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/haji/flask-test1
+your processes number limit is 31184
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uwsgi socket 0 bound to UNIX address /tmp/uwsgi.sock fd 6
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.10 (default, Nov 26 2021, 20:14:08)  [GCC 9.3.0]
+Python main interpreter initialized at 0x557318c61630
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 166688 bytes (162 KB) for 2 cores
+*** Operational MODE: threaded ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 44866)
+spawned uWSGI worker 1 (pid: 44867, cores: 2)
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x557318c61630 pid: 44867 (default app)
+[pid: 44867|app: 0|req: 1/1] 172.21.52.27 () {42 vars in 807 bytes} [Wed Jan 26 19:25:45 2022] GET /past_1day => generated 3975 bytes in 8 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 44867|app: 0|req: 2/2] 172.21.52.27 () {40 vars in 684 bytes} [Wed Jan 26 19:25:45 2022] GET /static/jquery.min2.js => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 1)
+/usr/local/lib/python3.8/dist-packages/bokeh/plotting/helpers.py:539: UserWarning: WheelZoomTool are being repeated
+  warnings.warn("%s are being repeated" % ",".join(repeated_tools))
+/usr/local/lib/python3.8/dist-packages/bokeh/plotting/helpers.py:539: UserWarning: WheelZoomTool are being repeated
+  warnings.warn("%s are being repeated" % ",".join(repeated_tools))
+[pid: 44867|app: 0|req: 3/3] 172.21.52.27 () {48 vars in 837 bytes} [Wed Jan 26 19:25:53 2022] POST /past_postpage_1day => generated 8022502 bytes in 2625 msecs (HTTP/1.1 200) 2 headers in 76 bytes (38 switches on core 0)
+[pid: 44867|app: 0|req: 4/4] 172.21.52.27 () {42 vars in 798 bytes} [Wed Jan 26 19:26:01 2022] GET / => generated 1565 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 1)
+[pid: 44867|app: 0|req: 5/5] 172.21.52.27 () {40 vars in 680 bytes} [Wed Jan 26 19:26:01 2022] GET /static/style.css => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 0)
+[pid: 44867|app: 0|req: 6/6] 172.21.52.27 () {42 vars in 803 bytes} [Wed Jan 26 19:26:02 2022] GET /file4_1 => generated 125 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 44867|app: 0|req: 7/7] 172.21.52.27 () {42 vars in 824 bytes} [Wed Jan 26 19:26:03 2022] GET /save2/4/202201 => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket /tmp/uwsgi.sock removed.
+*** Starting uWSGI 2.0.20 (64bit) on [Wed Jan 26 19:27:09 2022] ***
+compiled with version: 9.3.0 on 20 December 2021 07:54:39
+os: Linux-5.11.0-43-generic #47~20.04.2-Ubuntu SMP Mon Dec 13 11:06:56 UTC 2021
+nodename: haji
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/haji/flask-test1
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/haji/flask-test1
+your processes number limit is 31184
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uwsgi socket 0 bound to UNIX address /tmp/uwsgi.sock fd 6
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.10 (default, Nov 26 2021, 20:14:08)  [GCC 9.3.0]
+Python main interpreter initialized at 0x55714963f630
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 166688 bytes (162 KB) for 2 cores
+*** Operational MODE: threaded ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 44890)
+spawned uWSGI worker 1 (pid: 44891, cores: 2)
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55714963f630 pid: 44891 (default app)
+[pid: 44891|app: 0|req: 1/1] 172.21.52.27 () {42 vars in 824 bytes} [Wed Jan 26 19:27:13 2022] GET /save2/4/202201 => generated 286 bytes in 4 msecs (HTTP/1.1 308) 3 headers in 148 bytes (1 switches on core 0)
+[pid: 44891|app: 0|req: 2/2] 172.21.52.27 () {42 vars in 826 bytes} [Wed Jan 26 19:27:13 2022] GET /save2/4/202201/ => generated 615 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 44891|app: 0|req: 3/3] 172.21.52.27 () {42 vars in 872 bytes} [Wed Jan 26 19:27:14 2022] GET /save2/4/202201/trig05_20220117.csv => generated 5569054 bytes in 15 msecs via sendfile() (HTTP/1.1 200) 7 headers in 289 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+Wed Jan 26 19:28:38 2022 - worker 1 (pid: 44891) is taking too much time to die...NO MERCY !!!
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket /tmp/uwsgi.sock removed.
+*** Starting uWSGI 2.0.20 (64bit) on [Wed Jan 26 19:28:39 2022] ***
+compiled with version: 9.3.0 on 20 December 2021 07:54:39
+os: Linux-5.11.0-43-generic #47~20.04.2-Ubuntu SMP Mon Dec 13 11:06:56 UTC 2021
+nodename: haji
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/haji/flask-test1
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/haji/flask-test1
+your processes number limit is 31184
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uwsgi socket 0 bound to UNIX address /tmp/uwsgi.sock fd 6
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.10 (default, Nov 26 2021, 20:14:08)  [GCC 9.3.0]
+Python main interpreter initialized at 0x55a199324630
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 166688 bytes (162 KB) for 2 cores
+*** Operational MODE: threaded ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 44917)
+spawned uWSGI worker 1 (pid: 44918, cores: 2)
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55a199324630 pid: 44918 (default app)
+[pid: 44918|app: 0|req: 1/1] 172.21.52.27 () {42 vars in 779 bytes} [Wed Jan 26 19:28:40 2022] GET / => generated 1569 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 44918|app: 0|req: 2/2] 172.21.52.27 () {40 vars in 680 bytes} [Wed Jan 26 19:28:40 2022] GET /static/style.css => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 1)
+[pid: 44918|app: 0|req: 3/3] 172.21.52.27 () {42 vars in 807 bytes} [Wed Jan 26 19:28:45 2022] GET /past_1day => generated 3975 bytes in 7 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 44918|app: 0|req: 4/4] 172.21.52.27 () {40 vars in 684 bytes} [Wed Jan 26 19:28:45 2022] GET /static/jquery.min2.js => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 1)
+/usr/local/lib/python3.8/dist-packages/bokeh/plotting/helpers.py:539: UserWarning: WheelZoomTool are being repeated
+  warnings.warn("%s are being repeated" % ",".join(repeated_tools))
+/usr/local/lib/python3.8/dist-packages/bokeh/plotting/helpers.py:539: UserWarning: WheelZoomTool are being repeated
+  warnings.warn("%s are being repeated" % ",".join(repeated_tools))
+[pid: 44918|app: 0|req: 5/5] 172.21.52.27 () {48 vars in 837 bytes} [Wed Jan 26 19:28:52 2022] POST /past_postpage_1day => generated 8022502 bytes in 2616 msecs (HTTP/1.1 200) 2 headers in 76 bytes (42 switches on core 0)
+/usr/local/lib/python3.8/dist-packages/bokeh/plotting/helpers.py:539: UserWarning: WheelZoomTool are being repeated
+  warnings.warn("%s are being repeated" % ",".join(repeated_tools))
+/usr/local/lib/python3.8/dist-packages/bokeh/plotting/helpers.py:539: UserWarning: WheelZoomTool are being repeated
+  warnings.warn("%s are being repeated" % ",".join(repeated_tools))
+[pid: 44918|app: 0|req: 6/6] 172.21.52.27 () {48 vars in 837 bytes} [Wed Jan 26 19:29:25 2022] POST /past_postpage_1day => generated 7996054 bytes in 2553 msecs (HTTP/1.1 200) 2 headers in 76 bytes (35 switches on core 1)
+[pid: 44918|app: 0|req: 7/7] 172.21.52.27 () {42 vars in 798 bytes} [Wed Jan 26 19:29:32 2022] GET / => generated 1569 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 44918|app: 0|req: 8/8] 172.21.52.27 () {40 vars in 680 bytes} [Wed Jan 26 19:29:32 2022] GET /static/style.css => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 1)
+[pid: 44918|app: 0|req: 9/9] 172.21.52.27 () {42 vars in 799 bytes} [Wed Jan 26 19:29:47 2022] GET /page1 => generated 2319 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+/usr/local/lib/python3.8/dist-packages/bokeh/plotting/helpers.py:539: UserWarning: WheelZoomTool are being repeated
+  warnings.warn("%s are being repeated" % ",".join(repeated_tools))
+[pid: 44918|app: 0|req: 10/10] 172.21.52.27 () {48 vars in 815 bytes} [Wed Jan 26 19:29:51 2022] POST /postpage1 => generated 25482 bytes in 73 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 1)
+/usr/local/lib/python3.8/dist-packages/bokeh/plotting/helpers.py:539: UserWarning: WheelZoomTool are being repeated
+  warnings.warn("%s are being repeated" % ",".join(repeated_tools))
+[pid: 44918|app: 0|req: 11/11] 172.21.52.27 () {48 vars in 815 bytes} [Wed Jan 26 19:29:52 2022] POST /postpage1 => generated 25482 bytes in 61 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 0)
+/usr/local/lib/python3.8/dist-packages/bokeh/plotting/helpers.py:539: UserWarning: WheelZoomTool are being repeated
+  warnings.warn("%s are being repeated" % ",".join(repeated_tools))
+[pid: 44918|app: 0|req: 12/12] 172.21.52.27 () {48 vars in 815 bytes} [Wed Jan 26 19:29:53 2022] POST /postpage1 => generated 25482 bytes in 58 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 1)
+/usr/local/lib/python3.8/dist-packages/bokeh/plotting/helpers.py:539: UserWarning: WheelZoomTool are being repeated
+  warnings.warn("%s are being repeated" % ",".join(repeated_tools))
+[pid: 44918|app: 0|req: 13/13] 172.21.52.27 () {48 vars in 815 bytes} [Wed Jan 26 19:29:53 2022] POST /postpage1 => generated 25482 bytes in 60 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 0)
+[pid: 44918|app: 0|req: 14/14] 172.21.52.27 () {42 vars in 794 bytes} [Wed Jan 26 19:29:54 2022] GET / => generated 1569 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 1)
+[pid: 44918|app: 0|req: 15/15] 172.21.52.27 () {40 vars in 680 bytes} [Wed Jan 26 19:29:54 2022] GET /static/style.css => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 0)

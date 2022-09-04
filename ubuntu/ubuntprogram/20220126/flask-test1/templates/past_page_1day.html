@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        <title>MAT装置 過去データ1日分</title>
+        <script src="../static/jquery.min2.js"></script>
+        <script src="static/jquery.min.js"></script>
+        <link rel="stylesheet" href="static/bokeh-0.13.0.min.css" type="text/css" />
+
+        <script type="text/javascript" src="static/bokeh-0.13.0.min.js"></script>
+<style type="text/css">
+.div1 {
+    float:left;
+}
+</style>  
+	</head>
+	<body> 
+        <p id="eid_date">MAT装置 過去データ1日分</p> 
+        <p>確認したい日付を選択してください<br> 
+        前日以降のデータ以降が確認できます。<br>
+        ネットの蛇行量、ローラー回転が表示されます<br>
+        蛇行量min<input type="text" id="input0" value=150 size="10">
+         max<input type="text" id="input0_1" value=300 size="10">
+         <br>
+         ローラー回転min<input type="text" id="input0_2" value=0 size="10">
+         max<input type="text" id="input0_3" value=270 size="10">
+         <br>   
+        
+            <input type="text" id="input1" name="birth01" size="10">
+            </select> 年
+            <select id="input2" name="birth02" class="js-changeMonth" >      
+            </select> 月
+            <select id="input3" name="birth03" class="js-changeDay">            
+            </select> 日
+<br>
+            <input type="button" id="button" value="ボタン1" /><br>
+           
+            <a href="/">index</a>
+         
+        
+        <div id="data1" class=div1></div>
+        <div id="data2" class=div1></div>
+        <div id="data3" class=div1></div>
+        <div id="error" class=div1></div><br>
+        <div id="data4" class=div1></div>
+        <div id="data5" class=div1></div>
+        <div id="data6" class=div1></div>
+        <div id="error2" class=div1></div>
+
+        <script>
+var Element = document.getElementById("input2");
+for (var i = 1; i<= 12; i++) {
+  var option = document.createElement("option");
+  option.value = i;
+  option.innerText = i;
+  Element.appendChild(option);
+}
+var Element = document.getElementById("input3");
+for (var i = 1; i<= 31; i++) {
+  var option = document.createElement("option");
+  option.value = i;
+  option.innerText = i;
+  Element.appendChild(option);
+}
+   </script>
+
+        <script>
+        $(window).load(init());
+        function init(){
+          $("#button").click(function() {
+            var textData = JSON.stringify({"t":$("#input1").val(),"t_2":$("#input2").val(),
+            "t_3":$("#input3").val(),
+            "v1":$("#input0").val(),"v2":$("#input0_1").val(),
+            "v3":$("#input0_2").val(),"v4":$("#input0_3").val(),     
+            });
+            console.log(textData)
+            $.ajax({
+              type:'POST',
+              url:'/past_postpage_1day',
+              data:textData,
+              contentType:'application/json',
+              success:function(data) {
+                var result = JSON.parse(data.ResultSet).result;
+                var result2 = JSON.parse(data.ResultSet).result2;
+                var result3 = JSON.parse(data.ResultSet).result3;
+                var error = JSON.parse(data.ResultSet).error;
+                var result_2 = JSON.parse(data.ResultSet).result4;
+                var result2_2 = JSON.parse(data.ResultSet).result5;
+                var result3_2 = JSON.parse(data.ResultSet).result6;
+                var error2 = JSON.parse(data.ResultSet).error2;
+                               
+                $("#data1").html(result);
+                $("#data2").html(result2);
+                $("#data3").html(result3);
+                $("#error").html(error);
+                $("#data4").html(result_2);
+                $("#data5").html(result2_2);
+                $("#data6").html(result3_2);
+                $("#error2").html(error2);
+           
+              }
+            });
+            return false;
+          });
+        }          
+           </script>
+
+	</body>
+</html>

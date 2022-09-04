@@ -1,0 +1,250 @@
+*** Starting uWSGI 2.0.20 (64bit) on [Tue Jan 18 12:35:30 2022] ***
+compiled with version: 9.3.0 on 20 December 2021 07:54:39
+os: Linux-5.11.0-43-generic #47~20.04.2-Ubuntu SMP Mon Dec 13 11:06:56 UTC 2021
+nodename: haji
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/haji/flask-test1
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/haji/flask-test1
+your processes number limit is 31184
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uwsgi socket 0 bound to UNIX address /tmp/uwsgi.sock fd 6
+Python version: 3.8.10 (default, Nov 26 2021, 20:14:08)  [GCC 9.3.0]
+Python main interpreter initialized at 0x5588a2395750
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 166688 bytes (162 KB) for 2 cores
+*** Operational MODE: threaded ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 22440)
+spawned uWSGI worker 1 (pid: 22441, cores: 2)
+Traceback (most recent call last):
+  File "/home/haji/flask-test1/matflask_main.py", line 406, in <module>
+    def root():
+  File "/home/haji/.local/lib/python3.8/site-packages/flask/app.py", line 1315, in decorator
+    self.add_url_rule(rule, endpoint, f, **options)
+  File "/home/haji/.local/lib/python3.8/site-packages/flask/app.py", line 98, in wrapper_func
+    return f(self, *args, **kwargs)
+  File "/home/haji/.local/lib/python3.8/site-packages/flask/app.py", line 1282, in add_url_rule
+    raise AssertionError(
+AssertionError: View function mapping is overwriting an existing endpoint function: root
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+--- no python application found, check your startup logs for errors ---
+[pid: 22441|app: -1|req: -1/1] 172.21.52.27 () {42 vars in 779 bytes} [Tue Jan 18 12:35:37 2022] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket /tmp/uwsgi.sock removed.
+*** Starting uWSGI 2.0.20 (64bit) on [Tue Jan 18 12:36:06 2022] ***
+compiled with version: 9.3.0 on 20 December 2021 07:54:39
+os: Linux-5.11.0-43-generic #47~20.04.2-Ubuntu SMP Mon Dec 13 11:06:56 UTC 2021
+nodename: haji
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/haji/flask-test1
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/haji/flask-test1
+your processes number limit is 31184
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uwsgi socket 0 bound to UNIX address /tmp/uwsgi.sock fd 6
+Python version: 3.8.10 (default, Nov 26 2021, 20:14:08)  [GCC 9.3.0]
+Python main interpreter initialized at 0x5558ae210750
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 166688 bytes (162 KB) for 2 cores
+*** Operational MODE: threaded ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 22451)
+spawned uWSGI worker 1 (pid: 22452, cores: 2)
+Traceback (most recent call last):
+  File "/home/haji/flask-test1/matflask_main.py", line 406, in <module>
+    def root():
+  File "/home/haji/.local/lib/python3.8/site-packages/flask/app.py", line 1315, in decorator
+    self.add_url_rule(rule, endpoint, f, **options)
+  File "/home/haji/.local/lib/python3.8/site-packages/flask/app.py", line 98, in wrapper_func
+    return f(self, *args, **kwargs)
+  File "/home/haji/.local/lib/python3.8/site-packages/flask/app.py", line 1282, in add_url_rule
+    raise AssertionError(
+AssertionError: View function mapping is overwriting an existing endpoint function: root
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+--- no python application found, check your startup logs for errors ---
+[pid: 22452|app: -1|req: -1/1] 172.21.52.27 () {42 vars in 779 bytes} [Tue Jan 18 12:36:09 2022] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket /tmp/uwsgi.sock removed.
+*** Starting uWSGI 2.0.20 (64bit) on [Tue Jan 18 12:37:06 2022] ***
+compiled with version: 9.3.0 on 20 December 2021 07:54:39
+os: Linux-5.11.0-43-generic #47~20.04.2-Ubuntu SMP Mon Dec 13 11:06:56 UTC 2021
+nodename: haji
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/haji/flask-test1
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/haji/flask-test1
+your processes number limit is 31184
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uwsgi socket 0 bound to UNIX address /tmp/uwsgi.sock fd 6
+Python version: 3.8.10 (default, Nov 26 2021, 20:14:08)  [GCC 9.3.0]
+Python main interpreter initialized at 0x55cacf9cb750
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 166688 bytes (162 KB) for 2 cores
+*** Operational MODE: threaded ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 22473)
+spawned uWSGI worker 1 (pid: 22474, cores: 2)
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55cacf9cb750 pid: 22474 (default app)
+[pid: 22474|app: 0|req: 1/1] 172.21.52.27 () {42 vars in 779 bytes} [Tue Jan 18 12:37:10 2022] GET / => generated 1415 bytes in 10 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 22474|app: 0|req: 2/2] 172.21.52.27 () {40 vars in 680 bytes} [Tue Jan 18 12:37:10 2022] GET /static/style.css => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 1)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket /tmp/uwsgi.sock removed.
+*** Starting uWSGI 2.0.20 (64bit) on [Tue Jan 18 12:44:44 2022] ***
+compiled with version: 9.3.0 on 20 December 2021 07:54:39
+os: Linux-5.11.0-43-generic #47~20.04.2-Ubuntu SMP Mon Dec 13 11:06:56 UTC 2021
+nodename: haji
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/haji/flask-test1
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/haji/flask-test1
+your processes number limit is 31184
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uwsgi socket 0 bound to UNIX address /tmp/uwsgi.sock fd 6
+Python version: 3.8.10 (default, Nov 26 2021, 20:14:08)  [GCC 9.3.0]
+Python main interpreter initialized at 0x55830036c750
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 166688 bytes (162 KB) for 2 cores
+*** Operational MODE: threaded ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 22512)
+spawned uWSGI worker 1 (pid: 22513, cores: 2)
+Traceback (most recent call last):
+  File "/home/haji/flask-test1/matflask_main.py", line 406, in <module>
+    def root():
+  File "/home/haji/.local/lib/python3.8/site-packages/flask/app.py", line 1315, in decorator
+    self.add_url_rule(rule, endpoint, f, **options)
+  File "/home/haji/.local/lib/python3.8/site-packages/flask/app.py", line 98, in wrapper_func
+    return f(self, *args, **kwargs)
+  File "/home/haji/.local/lib/python3.8/site-packages/flask/app.py", line 1282, in add_url_rule
+    raise AssertionError(
+AssertionError: View function mapping is overwriting an existing endpoint function: root
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+--- no python application found, check your startup logs for errors ---
+[pid: 22513|app: -1|req: -1/1] 172.21.52.27 () {42 vars in 779 bytes} [Tue Jan 18 12:44:49 2022] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket /tmp/uwsgi.sock removed.
+*** Starting uWSGI 2.0.20 (64bit) on [Tue Jan 18 12:45:58 2022] ***
+compiled with version: 9.3.0 on 20 December 2021 07:54:39
+os: Linux-5.11.0-43-generic #47~20.04.2-Ubuntu SMP Mon Dec 13 11:06:56 UTC 2021
+nodename: haji
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/haji/flask-test1
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/haji/flask-test1
+your processes number limit is 31184
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uwsgi socket 0 bound to UNIX address /tmp/uwsgi.sock fd 6
+Python version: 3.8.10 (default, Nov 26 2021, 20:14:08)  [GCC 9.3.0]
+Python main interpreter initialized at 0x55f2a2418750
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 166688 bytes (162 KB) for 2 cores
+*** Operational MODE: threaded ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 22529)
+spawned uWSGI worker 1 (pid: 22530, cores: 2)
+Traceback (most recent call last):
+  File "/home/haji/flask-test1/matflask_main.py", line 417, in <module>
+    def show_file(test):
+  File "/home/haji/.local/lib/python3.8/site-packages/flask/app.py", line 1315, in decorator
+    self.add_url_rule(rule, endpoint, f, **options)
+  File "/home/haji/.local/lib/python3.8/site-packages/flask/app.py", line 98, in wrapper_func
+    return f(self, *args, **kwargs)
+  File "/home/haji/.local/lib/python3.8/site-packages/flask/app.py", line 1282, in add_url_rule
+    raise AssertionError(
+AssertionError: View function mapping is overwriting an existing endpoint function: show_file
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+--- no python application found, check your startup logs for errors ---
+[pid: 22530|app: -1|req: -1/1] 172.21.52.27 () {42 vars in 779 bytes} [Tue Jan 18 12:46:02 2022] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket /tmp/uwsgi.sock removed.
+*** Starting uWSGI 2.0.20 (64bit) on [Tue Jan 18 12:46:33 2022] ***
+compiled with version: 9.3.0 on 20 December 2021 07:54:39
+os: Linux-5.11.0-43-generic #47~20.04.2-Ubuntu SMP Mon Dec 13 11:06:56 UTC 2021
+nodename: haji
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/haji/flask-test1
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/haji/flask-test1
+your processes number limit is 31184
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uwsgi socket 0 bound to UNIX address /tmp/uwsgi.sock fd 6
+Python version: 3.8.10 (default, Nov 26 2021, 20:14:08)  [GCC 9.3.0]
+Python main interpreter initialized at 0x56143c16c750
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 166688 bytes (162 KB) for 2 cores
+*** Operational MODE: threaded ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 22541)
+spawned uWSGI worker 1 (pid: 22542, cores: 2)
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x56143c16c750 pid: 22542 (default app)
+[pid: 22542|app: 0|req: 1/1] 172.21.52.27 () {42 vars in 779 bytes} [Tue Jan 18 12:46:36 2022] GET / => generated 1415 bytes in 7 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 22542|app: 0|req: 2/2] 172.21.52.27 () {40 vars in 680 bytes} [Tue Jan 18 12:46:36 2022] GET /static/style.css => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 1)
+[pid: 22542|app: 0|req: 3/3] 172.21.52.27 () {42 vars in 799 bytes} [Tue Jan 18 12:46:38 2022] GET /file4 => generated 491 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 22542|app: 0|req: 4/4] 172.21.52.27 () {42 vars in 826 bytes} [Tue Jan 18 12:46:39 2022] GET /save/1/20220117/ => generated 831 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 1)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket /tmp/uwsgi.sock removed.
